@@ -140,66 +140,35 @@ namespace Opc.Ua
         {
             ServiceResult error = null;
 
-            try
+
+            if (!this.EnabledState.Id.Value)
             {
-                if (!this.EnabledState.Id.Value)
-                {
-                    return error = StatusCodes.BadConditionDisabled;
-                }
-
-                if (!this.DialogState.Id.Value)
-                {
-                    return error = StatusCodes.BadDialogNotActive;
-                }
-
-                if (selectedResponse < 0 || selectedResponse >= this.ResponseOptionSet.Value.Length)
-                {
-                    return error = StatusCodes.BadDialogResponseInvalid;
-                }
-
-                if (OnRespond == null)
-                {
-                    return error = StatusCodes.BadNotSupported;
-                }
-
-                error = OnRespond(context, this, selectedResponse);
-
-                // report a state change event.
-                if (ServiceResult.IsGood(error))
-                {
-                    ReportStateChange(context, false);
-                }
+                return error = StatusCodes.BadConditionDisabled;
             }
-            finally
+
+            if (!this.DialogState.Id.Value)
             {
-                if (this.AreEventsMonitored)
-                {
-                    AuditConditionRespondEventState e = new AuditConditionRespondEventState(null);
-
-                    TranslationInfo info = new TranslationInfo(
-                        "AuditConditionDialogResponse",
-                        "en-US",
-                        "The Respond method was called.");
-
-                    e.Initialize(
-                        context,
-                        this,
-                        EventSeverity.Low,
-                        new LocalizedText(info),
-                        ServiceResult.IsGood(error),
-                        DateTime.UtcNow);
-
-                    e.SourceName.Value = "Attribute/Call";
-
-                    e.MethodId = new PropertyState<NodeId>(e);
-                    e.MethodId.Value = method.NodeId;
-
-                    e.InputArguments = new PropertyState<object[]>(e);
-                    e.InputArguments.Value = new object[] { selectedResponse };
-
-                    ReportEvent(context, e);
-                }
+                return error = StatusCodes.BadDialogNotActive;
             }
+
+            if (selectedResponse < 0 || selectedResponse >= this.ResponseOptionSet.Value.Length)
+            {
+                return error = StatusCodes.BadDialogResponseInvalid;
+            }
+
+            if (OnRespond == null)
+            {
+                return error = StatusCodes.BadNotSupported;
+            }
+
+            error = OnRespond(context, this, selectedResponse);
+
+            // report a state change event.
+            if (ServiceResult.IsGood(error))
+            {
+                ReportStateChange(context, false);
+            }
+
 
             return error;
         }

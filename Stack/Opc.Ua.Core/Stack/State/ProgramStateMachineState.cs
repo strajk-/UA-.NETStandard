@@ -127,46 +127,6 @@ namespace Opc.Ua
         
 
         /// <summary>
-        /// Creates an instance of an audit event.
-        /// </summary>
-        protected override AuditUpdateStateEventState CreateAuditEvent(
-            ISystemContext context,
-            MethodState causeMethod,
-            uint causeId)
-        {
-            return new ProgramTransitionAuditEventState(null);
-        }
-        
-        /// <summary>
-        /// Updates an audit event after the method is invoked.
-        /// </summary>
-        protected override void UpdateAuditEvent(
-            ISystemContext context,
-            MethodState causeMethod,
-            uint causeId,
-            AuditUpdateStateEventState e,
-            ServiceResult result)
-        {            
-            base.UpdateAuditEvent(
-                context,
-                causeMethod,
-                causeId,
-                e,
-                result);
-
-            // update program specific event fields.
-            if (ServiceResult.IsGood(result))
-            {
-                ProgramTransitionAuditEventState e2 = e as ProgramTransitionAuditEventState;
-
-                if (e2 != null)
-                {
-                    e2.SetChildValue(context, BrowseNames.Transition, LastTransition, false);
-                }
-            }
-        }
-
-        /// <summary>
         /// Creates an instance of an transition event.
         /// </summary>
         protected override TransitionEventState CreateTransitionEvent(

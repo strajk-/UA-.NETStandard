@@ -495,105 +495,49 @@ namespace Opc.Ua
         /// Invokes the specified cause.
         /// </summary>
         public virtual ServiceResult DoCause(
-            ISystemContext context, 
-            MethodState causeMethod, 
+            ISystemContext context,
+            MethodState causeMethod,
             uint causeId,
             IList<object> inputArguments,
             IList<object> outputArguments)
         {
             ServiceResult result = null;
 
-            try
+            // get the transition.
+            uint transitionId = GetTransitionForCause(context, causeId);
+
+            if (transitionId == 0)
             {
-                // get the transition.
-                uint transitionId = GetTransitionForCause(context, causeId);
-
-                if (transitionId == 0)
-                {
-                    return StatusCodes.BadNotSupported;
-                }
-
-                // check access rights.
-                result = InvokeCallback(
-                    OnCheckUserPermission,
-                    context, 
-                    this, 
-                    transitionId, 
-                    causeId,
-                    inputArguments,
-                    outputArguments);
-
-                if (ServiceResult.IsBad(result))
-                {
-                    return result;
-                }
-
-                // do the transition.
-                result = DoTransition(context, transitionId, causeId, inputArguments, outputArguments);
-
-                if (ServiceResult.IsBad(result))
-                {
-                    return result;
-                }
-
-                // report any changes to state machine.
-                ClearChangeMasks(context, true);
+                return StatusCodes.BadNotSupported;
             }
-            finally
-            {
-                // report the event.
-                if (this.AreEventsMonitored)
-                {
-                    AuditUpdateStateEventState e = CreateAuditEvent(context, causeMethod, causeId);
-                    UpdateAuditEvent(context, causeMethod, causeId, e, result);
-                    ReportEvent(context, e);
-                }
-            }        
 
-            return result;    
-        }
-
-        /// <summary>
-        /// Creates an instance of an audit event.
-        /// </summary>
-        protected virtual AuditUpdateStateEventState CreateAuditEvent(
-            ISystemContext context,
-            MethodState causeMethod,
-            uint causeId)
-        {
-            return new AuditUpdateStateEventState(null);
-        }
-        
-        /// <summary>
-        /// Updates an audit event after the method is invoked.
-        /// </summary>
-        protected virtual void UpdateAuditEvent(
-            ISystemContext context,
-            MethodState causeMethod,
-            uint causeId,
-            AuditUpdateStateEventState e,
-            ServiceResult result)
-        {            
-            TranslationInfo info = new TranslationInfo(
-                "StateTransition",
-                "en-US",
-                "The {1} method called was on the {0} state machine.",
-                this.GetDisplayPath(3, '.'),
-                causeMethod.DisplayName);
-
-            e.Initialize(
+            // check access rights.
+            result = InvokeCallback(
+                OnCheckUserPermission,
                 context,
                 this,
-                EventSeverity.Medium,
-                new LocalizedText(info),
-                ServiceResult.IsGood(result),
-                DateTime.UtcNow);
-            
-            e.MethodId = new PropertyState<NodeId>(e);
-            e.MethodId.Value = causeMethod.NodeId;
+                transitionId,
+                causeId,
+                inputArguments,
+                outputArguments);
 
-            e.SetChildValue(context, BrowseNames.OldStateId, LastState, false);
-            e.SetChildValue(context, BrowseNames.NewStateId, CurrentState, false);
+            if (ServiceResult.IsBad(result))
+            {
+                return result;
+            }
+
+            // do the transition.
+            result = DoTransition(context, transitionId, causeId, inputArguments, outputArguments);
+
+            if (ServiceResult.IsBad(result))
+            {
+                return result;
+            }
+
+            // report any changes to state machine.
+            ClearChangeMasks(context, true);
+
+            return result;
         }
 
         /// <summary>

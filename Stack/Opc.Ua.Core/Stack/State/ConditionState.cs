@@ -469,31 +469,6 @@ namespace Opc.Ua
                     ReportStateChange(context, false);
                 }
 
-                // raise the audit event.
-                AuditConditionCommentEventState e = new AuditConditionCommentEventState(null);
-
-                TranslationInfo info = new TranslationInfo(
-                    "AuditConditionComment",
-                    "en-US",
-                    "The AddComment method was called.");
-
-                e.Initialize(
-                    context,
-                    this,
-                    EventSeverity.Low,
-                    new LocalizedText(info),
-                    ServiceResult.IsGood(error),
-                    DateTime.UtcNow);
-
-                e.SourceName.Value = "Attribute/Call";
-
-                e.MethodId = new PropertyState<NodeId>(e);
-                e.MethodId.Value = method.NodeId;
-
-                e.InputArguments = new PropertyState<object[]>(e);
-                e.InputArguments.Value = new object[] { eventId, comment };
-
-                ReportEvent(context, e);
             }
 
             return error;
@@ -583,29 +558,6 @@ namespace Opc.Ua
                 {
                     ReportStateChange(context, false);
                 }
-
-                // raise the audit event.
-                AuditConditionEnableEventState e = new AuditConditionEnableEventState(null);
-
-                TranslationInfo info = new TranslationInfo(
-                    "AuditConditionEnable",
-                    "en-US",
-                    "The Enable method was called.");
-
-                e.Initialize(
-                    context,
-                    this,
-                    EventSeverity.Low,
-                    new LocalizedText(info),
-                    ServiceResult.IsGood(error),
-                    DateTime.UtcNow);
-
-                e.SourceName.Value = "Attribute/Call";
-
-                e.MethodId = new PropertyState<NodeId>(e);
-                e.MethodId.Value = method.NodeId;
-
-                ReportEvent(context, e);
             }
 
             return error;
@@ -634,40 +586,6 @@ namespace Opc.Ua
 
                 UpdateStateAfterDisable(context);
             }
-
-            // raise the audit event.
-            if (this.AreEventsMonitored)
-            {
-                // report a state change event.
-                if (ServiceResult.IsGood(error))
-                {
-                    ReportStateChange(context, true);
-                }
-
-                // raise the audit event.
-                AuditConditionEnableEventState e = new AuditConditionEnableEventState(null);
-
-                TranslationInfo info = new TranslationInfo(
-                    "AuditConditionEnable",
-                    "en-US",
-                    "The Disable method was called.");
-
-                e.Initialize(
-                    context,
-                    this,
-                    EventSeverity.Low,
-                    new LocalizedText(info),
-                    ServiceResult.IsGood(error),
-                    DateTime.UtcNow);
-
-                e.SourceName.Value = "Attribute/Call";
-
-                e.MethodId = new PropertyState<NodeId>(e);
-                e.MethodId.Value = method.NodeId;
-
-                ReportEvent(context, e);
-            }
-
             return error;
         }
         

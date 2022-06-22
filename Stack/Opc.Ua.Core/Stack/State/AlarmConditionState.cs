@@ -526,57 +526,27 @@ namespace Opc.Ua
         {
             ServiceResult error = null;
 
-            try
+            if (!this.EnabledState.Id.Value)
             {
-                if (!this.EnabledState.Id.Value)
-                {
-                    return error = StatusCodes.BadConditionDisabled;
-                }
-
-                if (!this.ShelvingState.IsCausePermitted(context, Methods.ShelvedStateMachineType_OneShotShelve, false))
-                {
-                    return error = StatusCodes.BadConditionAlreadyShelved;
-                }
-
-                if (OnShelve == null)
-                {
-                    return error = StatusCodes.BadNotSupported;
-                }
-
-                error = OnShelve(context, this, true, true, 0);
-
-                // report a state change event.
-                if (ServiceResult.IsGood(error))
-                {
-                    ReportStateChange(context, false);
-                }
+                return error = StatusCodes.BadConditionDisabled;
             }
-            finally
+
+            if (!this.ShelvingState.IsCausePermitted(context, Methods.ShelvedStateMachineType_OneShotShelve, false))
             {
-                if (this.AreEventsMonitored)
-                {
-                    AuditConditionShelvingEventState e = new AuditConditionShelvingEventState(null);
+                return error = StatusCodes.BadConditionAlreadyShelved;
+            }
 
-                    TranslationInfo info = new TranslationInfo(
-                        "AuditConditionOneShotShelve",
-                        "en-US",
-                        "The OneShotShelve method was called.");
+            if (OnShelve == null)
+            {
+                return error = StatusCodes.BadNotSupported;
+            }
 
-                    e.Initialize(
-                        context,
-                        this,
-                        EventSeverity.Low,
-                        new LocalizedText(info),
-                        ServiceResult.IsGood(error),
-                        DateTime.UtcNow);
+            error = OnShelve(context, this, true, true, 0);
 
-                    e.SourceName.Value = "Attribute/Call";
-
-                    e.MethodId = new PropertyState<NodeId>(e);
-                    e.MethodId.Value = method.NodeId;
-
-                    ReportEvent(context, e);
-                }
+            // report a state change event.
+            if (ServiceResult.IsGood(error))
+            {
+                ReportStateChange(context, false);
             }
 
             return error;
@@ -605,65 +575,32 @@ namespace Opc.Ua
         {
             ServiceResult error = null;
 
-            try
+            if (!this.EnabledState.Id.Value)
             {
-                if (!this.EnabledState.Id.Value)
-                {
-                    return error = StatusCodes.BadConditionDisabled;
-                }
-
-                if (shelvingTime <= 0 || (this.MaxTimeShelved != null && shelvingTime > this.MaxTimeShelved.Value))
-                {
-                    return error = StatusCodes.BadShelvingTimeOutOfRange;
-                }
-
-                if (!this.ShelvingState.IsCausePermitted(context, Methods.ShelvedStateMachineType_TimedShelve, false))
-                {
-                    return error = StatusCodes.BadConditionAlreadyShelved;
-                }
-
-                if (OnShelve == null)
-                {
-                    return error = StatusCodes.BadNotSupported;
-                }
-
-                error = OnShelve(context, this, true, false, shelvingTime);
-
-                // report a state change event.
-                if (ServiceResult.IsGood(error))
-                {
-                    ReportStateChange(context, false);
-                }
+                return error = StatusCodes.BadConditionDisabled;
             }
-            finally
+
+            if (shelvingTime <= 0 || (this.MaxTimeShelved != null && shelvingTime > this.MaxTimeShelved.Value))
             {
-                if (this.AreEventsMonitored)
-                {
-                    AuditConditionShelvingEventState e = new AuditConditionShelvingEventState(null);
+                return error = StatusCodes.BadShelvingTimeOutOfRange;
+            }
 
-                    TranslationInfo info = new TranslationInfo(
-                        "AuditConditionTimedShelve",
-                        "en-US",
-                        "The TimedShelve method was called.");
+            if (!this.ShelvingState.IsCausePermitted(context, Methods.ShelvedStateMachineType_TimedShelve, false))
+            {
+                return error = StatusCodes.BadConditionAlreadyShelved;
+            }
 
-                    e.Initialize(
-                        context,
-                        this,
-                        EventSeverity.Low,
-                        new LocalizedText(info),
-                        ServiceResult.IsGood(error),
-                        DateTime.UtcNow);
+            if (OnShelve == null)
+            {
+                return error = StatusCodes.BadNotSupported;
+            }
 
-                    e.SourceName.Value = "Attribute/Call";
+            error = OnShelve(context, this, true, false, shelvingTime);
 
-                    e.MethodId = new PropertyState<NodeId>(e);
-                    e.MethodId.Value = method.NodeId;
-
-                    e.InputArguments = new PropertyState<object[]>(e);
-                    e.InputArguments.Value = new object[] { shelvingTime };
-
-                    ReportEvent(context, e);
-                }
+            // report a state change event.
+            if (ServiceResult.IsGood(error))
+            {
+                ReportStateChange(context, false);
             }
 
             return error;
@@ -692,58 +629,27 @@ namespace Opc.Ua
         {
             ServiceResult error = null;
 
-            try
+            if (!this.EnabledState.Id.Value)
             {
-                if (!this.EnabledState.Id.Value)
-                {
-                    return error = StatusCodes.BadConditionDisabled;
-                }
-
-                if (!this.ShelvingState.IsCausePermitted(context, Methods.ShelvedStateMachineType_Unshelve, false))
-                {
-                    return error = StatusCodes.BadConditionNotShelved;
-                }
-
-                if (OnShelve == null)
-                {
-                    return error = StatusCodes.BadNotSupported;
-                }
-
-                error = OnShelve(context, this, false, false, 0);
-
-                // report a state change event.
-                if (ServiceResult.IsGood(error))
-                {
-                    ReportStateChange(context, false);
-                }
+                return error = StatusCodes.BadConditionDisabled;
             }
-            finally
+
+            if (!this.ShelvingState.IsCausePermitted(context, Methods.ShelvedStateMachineType_Unshelve, false))
             {
-                // raise the audit event.
-                if (this.AreEventsMonitored)
-                {
-                    AuditConditionShelvingEventState e = new AuditConditionShelvingEventState(null);
+                return error = StatusCodes.BadConditionNotShelved;
+            }
 
-                    TranslationInfo info = new TranslationInfo(
-                        "AuditConditionUnshelve",
-                        "en-US",
-                        "The Unshelve method was called.");
+            if (OnShelve == null)
+            {
+                return error = StatusCodes.BadNotSupported;
+            }
 
-                    e.Initialize(
-                        context,
-                        this,
-                        EventSeverity.Low,
-                        new LocalizedText(info),
-                        ServiceResult.IsGood(error),
-                        DateTime.UtcNow);
+            error = OnShelve(context, this, false, false, 0);
 
-                    e.SourceName.Value = "Attribute/Call";
-
-                    e.MethodId = new PropertyState<NodeId>(e);
-                    e.MethodId.Value = method.NodeId;
-
-                    ReportEvent(context, e);
-                }
+            // report a state change event.
+            if (ServiceResult.IsGood(error))
+            {
+                ReportStateChange(context, false);
             }
 
             return error;

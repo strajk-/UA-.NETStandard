@@ -191,31 +191,6 @@ namespace Opc.Ua
                     ReportStateChange(context, false);
                 }
 
-                // raise the audit event.
-                AuditConditionAcknowledgeEventState e = new AuditConditionAcknowledgeEventState(null);
-
-                TranslationInfo info = new TranslationInfo(
-                    "AuditConditionAcknowledge",
-                    "en-US",
-                    "The Acknowledge method was called.");
-
-                e.Initialize(
-                    context,
-                    this,
-                    EventSeverity.Low,
-                    new LocalizedText(info),
-                    ServiceResult.IsGood(error),
-                    DateTime.UtcNow);
-
-                e.SourceName.Value = "Attribute/Call";
-
-                e.MethodId = new PropertyState<NodeId>(e);
-                e.MethodId.Value = method.NodeId;
-
-                e.InputArguments = new PropertyState<object[]>(e);
-                e.InputArguments.Value = new object[] { eventId, comment };
-
-                ReportEvent(context, e);
             }
 
             return error;
@@ -349,32 +324,6 @@ namespace Opc.Ua
                 {
                     ReportStateChange(context, false);
                 }
-
-                // raise the audit event.
-                AuditConditionConfirmEventState e = new AuditConditionConfirmEventState(null);
-
-                TranslationInfo info = new TranslationInfo(
-                    "AuditConditionConfirm",
-                    "en-US",
-                    "The Confirm method was called.");
-
-                e.Initialize(
-                    context,
-                    this,
-                    EventSeverity.Low,
-                    new LocalizedText(info),
-                    ServiceResult.IsGood(error),
-                    DateTime.UtcNow);
-
-                e.SourceName.Value = "Attribute/Call";
-
-                e.MethodId = new PropertyState<NodeId>(e);
-                e.MethodId.Value = method.NodeId;
-
-                e.InputArguments = new PropertyState<object[]>(e);
-                e.InputArguments.Value = new object[] { eventId, comment };
-
-                ReportEvent(context, e);
             }
 
             return error;
