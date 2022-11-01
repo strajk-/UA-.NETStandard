@@ -4,7 +4,7 @@
         <Uri>http://test.org/UA/StructuresWithArrays/</Uri>
     </NamespaceUris>
     <Models>
-        <Model ModelUri="http://test.org/UA/StructuresWithArrays/" PublicationDate="2022-10-28T00:00:00Z" Version="1.0.0">
+        <Model ModelUri="http://test.org/UA/StructuresWithArrays/" PublicationDate="2022-10-30T00:00:00Z" Version="1.0.0">
             <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2021-09-15T00:00:00Z" Version="1.04.10"/>
         </Model>
     </Models>
@@ -31,7 +31,7 @@
             <si:GeneratorExtension Hash="9744dc6efcede9fbddb1635242518e31"/>
         </Extension>
     </Extensions>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5000" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5000" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -49,7 +49,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5003" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5003" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -61,7 +61,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5005" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5005" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -73,7 +73,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5007" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5007" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -85,7 +85,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5009" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5009" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -97,7 +97,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5011" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5011" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -109,7 +109,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5013" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5013" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -121,7 +121,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5015" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5015" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -133,7 +133,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5017" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5017" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -145,7 +145,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5019" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5019" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -157,7 +157,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5021" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5021" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -169,7 +169,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5023" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5023" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -181,7 +181,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5025" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5025" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -193,7 +193,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5027" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5027" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -205,7 +205,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5029" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5029" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -217,7 +217,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5031" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5031" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -229,7 +229,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5033" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5033" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -241,7 +241,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5035" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5035" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -253,7 +253,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5037" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5037" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -265,7 +265,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="DefaultXML" NodeId="ns=1;i=5039" BrowseName="Default XML">
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5039" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>

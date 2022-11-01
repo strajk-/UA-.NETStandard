@@ -112,7 +112,7 @@ namespace StructuresWithArrays
     public static partial class Objects
     {
         /// <remarks />
-        public const uint Structure_A_Encoding_DefaultXML = 5000;
+        public const uint Structure_A_Encoding_DefaultXml = 5000;
 
         /// <remarks />
         public const uint Structure_A_Encoding_DefaultBinary = 5001;
@@ -121,115 +121,115 @@ namespace StructuresWithArrays
         public const uint Structure_B_Encoding_DefaultBinary = 5002;
 
         /// <remarks />
-        public const uint Structure_B_Encoding_DefaultXML = 5003;
+        public const uint Structure_B_Encoding_DefaultXml = 5003;
 
         /// <remarks />
         public const uint Structure_C_Encoding_DefaultBinary = 5004;
 
         /// <remarks />
-        public const uint Structure_C_Encoding_DefaultXML = 5005;
+        public const uint Structure_C_Encoding_DefaultXml = 5005;
 
         /// <remarks />
         public const uint Structure_D_Encoding_DefaultBinary = 5006;
 
         /// <remarks />
-        public const uint Structure_D_Encoding_DefaultXML = 5007;
+        public const uint Structure_D_Encoding_DefaultXml = 5007;
 
         /// <remarks />
         public const uint Structure_E_Encoding_DefaultBinary = 5008;
 
         /// <remarks />
-        public const uint Structure_E_Encoding_DefaultXML = 5009;
+        public const uint Structure_E_Encoding_DefaultXml = 5009;
 
         /// <remarks />
         public const uint Structure_F_Encoding_DefaultBinary = 5010;
 
         /// <remarks />
-        public const uint Structure_F_Encoding_DefaultXML = 5011;
+        public const uint Structure_F_Encoding_DefaultXml = 5011;
 
         /// <remarks />
         public const uint Structure_G_Encoding_DefaultBinary = 5012;
 
         /// <remarks />
-        public const uint Structure_G_Encoding_DefaultXML = 5013;
+        public const uint Structure_G_Encoding_DefaultXml = 5013;
 
         /// <remarks />
         public const uint Structure_H_Encoding_DefaultBinary = 5014;
 
         /// <remarks />
-        public const uint Structure_H_Encoding_DefaultXML = 5015;
+        public const uint Structure_H_Encoding_DefaultXml = 5015;
 
         /// <remarks />
         public const uint Structure_J_Encoding_DefaultBinary = 5016;
 
         /// <remarks />
-        public const uint Structure_J_Encoding_DefaultXML = 5017;
+        public const uint Structure_J_Encoding_DefaultXml = 5017;
 
         /// <remarks />
         public const uint Structure_K_Encoding_DefaultBinary = 5018;
 
         /// <remarks />
-        public const uint Structure_K_Encoding_DefaultXML = 5019;
+        public const uint Structure_K_Encoding_DefaultXml = 5019;
 
         /// <remarks />
         public const uint Structure_L_Encoding_DefaultBinary = 5020;
 
         /// <remarks />
-        public const uint Structure_L_Encoding_DefaultXML = 5021;
+        public const uint Structure_L_Encoding_DefaultXml = 5021;
 
         /// <remarks />
         public const uint Structure_M_Encoding_DefaultBinary = 5022;
 
         /// <remarks />
-        public const uint Structure_M_Encoding_DefaultXML = 5023;
+        public const uint Structure_M_Encoding_DefaultXml = 5023;
 
         /// <remarks />
         public const uint Structure_N_Encoding_DefaultBinary = 5024;
 
         /// <remarks />
-        public const uint Structure_N_Encoding_DefaultXML = 5025;
+        public const uint Structure_N_Encoding_DefaultXml = 5025;
 
         /// <remarks />
         public const uint Structure_O_Encoding_DefaultBinary = 5026;
 
         /// <remarks />
-        public const uint Structure_O_Encoding_DefaultXML = 5027;
+        public const uint Structure_O_Encoding_DefaultXml = 5027;
 
         /// <remarks />
         public const uint Structure_P_Encoding_DefaultBinary = 5028;
 
         /// <remarks />
-        public const uint Structure_P_Encoding_DefaultXML = 5029;
+        public const uint Structure_P_Encoding_DefaultXml = 5029;
 
         /// <remarks />
         public const uint Structure_Q_Encoding_DefaultBinary = 5030;
 
         /// <remarks />
-        public const uint Structure_Q_Encoding_DefaultXML = 5031;
+        public const uint Structure_Q_Encoding_DefaultXml = 5031;
 
         /// <remarks />
         public const uint Structure_R_Encoding_DefaultBinary = 5032;
 
         /// <remarks />
-        public const uint Structure_R_Encoding_DefaultXML = 5033;
+        public const uint Structure_R_Encoding_DefaultXml = 5033;
 
         /// <remarks />
         public const uint Structure_S_Encoding_DefaultBinary = 5034;
 
         /// <remarks />
-        public const uint Structure_S_Encoding_DefaultXML = 5035;
+        public const uint Structure_S_Encoding_DefaultXml = 5035;
 
         /// <remarks />
         public const uint Structure_T_Encoding_DefaultBinary = 5036;
 
         /// <remarks />
-        public const uint Structure_T_Encoding_DefaultXML = 5037;
+        public const uint Structure_T_Encoding_DefaultXml = 5037;
 
         /// <remarks />
         public const uint LargeComplexStructure_Encoding_DefaultBinary = 5038;
 
         /// <remarks />
-        public const uint LargeComplexStructure_Encoding_DefaultXML = 5039;
+        public const uint LargeComplexStructure_Encoding_DefaultXml = 5039;
     }
     #endregion
 
@@ -729,7 +729,7 @@ namespace StructuresWithArrays
     public static partial class ObjectIds
     {
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_A_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_A_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_A_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_A_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_A_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_A_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
@@ -738,115 +738,115 @@ namespace StructuresWithArrays
         public static readonly ExpandedNodeId Structure_B_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_B_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_B_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_B_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_B_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_B_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_C_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_C_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_C_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_C_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_C_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_C_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_D_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_D_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_D_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_D_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_D_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_D_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_E_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_E_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_E_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_E_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_E_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_E_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_F_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_F_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_F_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_F_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_F_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_F_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_G_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_G_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_G_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_G_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_G_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_G_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_H_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_H_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_H_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_H_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_H_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_H_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_J_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_J_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_J_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_J_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_J_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_J_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_K_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_K_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_K_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_K_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_K_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_K_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_L_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_L_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_L_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_L_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_L_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_L_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_M_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_M_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_M_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_M_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_M_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_M_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_N_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_N_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_N_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_N_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_N_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_N_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_O_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_O_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_O_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_O_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_O_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_O_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_P_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_P_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_P_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_P_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_P_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_P_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_Q_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_Q_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_Q_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_Q_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_Q_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_Q_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_R_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_R_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_R_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_R_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_R_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_R_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_S_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_S_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_S_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_S_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_S_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_S_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId Structure_T_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_T_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId Structure_T_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_T_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId Structure_T_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.Structure_T_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
         public static readonly ExpandedNodeId LargeComplexStructure_Encoding_DefaultBinary = new ExpandedNodeId(StructuresWithArrays.Objects.LargeComplexStructure_Encoding_DefaultBinary, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
         /// <remarks />
-        public static readonly ExpandedNodeId LargeComplexStructure_Encoding_DefaultXML = new ExpandedNodeId(StructuresWithArrays.Objects.LargeComplexStructure_Encoding_DefaultXML, StructuresWithArrays.Namespaces.StructuresWithArrays);
+        public static readonly ExpandedNodeId LargeComplexStructure_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.LargeComplexStructure_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
     }
     #endregion
 

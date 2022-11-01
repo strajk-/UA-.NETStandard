@@ -90,7 +90,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_A_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_A_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -308,7 +308,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_B_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_B_Encoding_DefaultXml;
             
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -516,7 +516,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_C_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_C_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -708,7 +708,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_D_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_D_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -895,7 +895,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_E_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_E_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -1094,7 +1094,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_F_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_F_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -1293,7 +1293,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_G_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_G_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -1480,7 +1480,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_H_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_H_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -1667,7 +1667,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_J_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_J_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -1866,7 +1866,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_K_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_K_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -2065,7 +2065,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_L_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_L_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -2264,7 +2264,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_M_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_M_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -2463,7 +2463,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_N_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_N_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -2662,7 +2662,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_O_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_O_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -2849,7 +2849,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_P_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_P_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -3036,7 +3036,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_Q_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_Q_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -3223,7 +3223,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_R_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_R_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -3410,7 +3410,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_S_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_S_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -3597,7 +3597,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.Structure_T_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.Structure_T_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 
@@ -4216,7 +4216,7 @@ namespace StructuresWithArrays
         public virtual ExpandedNodeId BinaryEncodingId => ObjectIds.LargeComplexStructure_Encoding_DefaultBinary;
 
         /// <summary cref="IEncodeable.XmlEncodingId" />
-        public virtual ExpandedNodeId XmlEncodingId => throw new NotSupportedException();
+        public virtual ExpandedNodeId XmlEncodingId => ObjectIds.LargeComplexStructure_Encoding_DefaultXml;
                     
         /// <summary cref="IJsonEncodeable.JsonEncodingId" />
         public virtual ExpandedNodeId JsonEncodingId => throw new NotSupportedException(); 

@@ -3,7 +3,7 @@
   <uax:NamespaceUris>
     <uax:NamespaceUri>http://test.org/UA/StructuresWithArrays/</uax:NamespaceUri>
   </uax:NamespaceUris>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5000</uax:Identifier>
@@ -16,7 +16,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5000</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -45,7 +45,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5002</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5003</uax:Identifier>
@@ -58,7 +58,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5003</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -73,7 +73,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5004</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5005</uax:Identifier>
@@ -86,7 +86,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5005</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -101,7 +101,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5006</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5007</uax:Identifier>
@@ -114,7 +114,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5007</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -129,7 +129,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5008</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5009</uax:Identifier>
@@ -142,7 +142,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5009</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -157,7 +157,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5010</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5011</uax:Identifier>
@@ -170,7 +170,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5011</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -185,7 +185,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5012</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5013</uax:Identifier>
@@ -198,7 +198,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5013</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -213,7 +213,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5014</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5015</uax:Identifier>
@@ -226,7 +226,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5015</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -241,7 +241,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5016</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5017</uax:Identifier>
@@ -254,7 +254,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5017</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -269,7 +269,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5018</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5019</uax:Identifier>
@@ -282,7 +282,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5019</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -297,7 +297,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5020</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5021</uax:Identifier>
@@ -310,7 +310,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5021</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -325,7 +325,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5022</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5023</uax:Identifier>
@@ -338,7 +338,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5023</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -353,7 +353,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5024</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5025</uax:Identifier>
@@ -366,7 +366,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5025</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -381,7 +381,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5026</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5027</uax:Identifier>
@@ -394,7 +394,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5027</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -409,7 +409,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5028</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5029</uax:Identifier>
@@ -422,7 +422,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5029</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -437,7 +437,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5030</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5031</uax:Identifier>
@@ -450,7 +450,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5031</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -465,7 +465,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5032</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5033</uax:Identifier>
@@ -478,7 +478,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5033</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -493,7 +493,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5034</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5035</uax:Identifier>
@@ -506,7 +506,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5035</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -521,7 +521,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5036</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5037</uax:Identifier>
@@ -534,7 +534,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5037</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <DefaultBinary xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
@@ -549,7 +549,7 @@
     </uax:TypeDefinitionId>
     <uax:NumericId>5038</uax:NumericId>
   </DefaultBinary>
-  <DefaultXML xmlns="http://opcfoundation.org/UA/">
+  <DefaultXml xmlns="http://opcfoundation.org/UA/">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=5039</uax:Identifier>
@@ -562,7 +562,7 @@
       <uax:Identifier>i=76</uax:Identifier>
     </uax:TypeDefinitionId>
     <uax:NumericId>5039</uax:NumericId>
-  </DefaultXML>
+  </DefaultXml>
   <Structure_A xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
     <uax:NodeId>
@@ -610,6 +610,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5000</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5001</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_A>
   <Structure_B xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -658,6 +676,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5002</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5003</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_B>
   <Structure_C xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -706,6 +742,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5004</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5005</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_C>
   <Structure_D xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -744,6 +798,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5006</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5007</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_D>
   <Structure_E xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -782,6 +854,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5008</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5009</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_E>
   <Structure_F xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -820,6 +910,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5010</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5011</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_F>
   <Structure_G xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -858,6 +966,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5012</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5013</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_G>
   <Structure_H xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -896,6 +1022,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5014</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5015</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_H>
   <Structure_J xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -934,6 +1078,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5016</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5017</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_J>
   <Structure_K xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -974,6 +1136,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5018</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5019</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_K>
   <Structure_L xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -1014,6 +1194,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5020</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5021</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_L>
   <Structure_M xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -1054,6 +1252,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5022</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5023</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_M>
   <Structure_N xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -1094,6 +1310,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5024</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5025</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_N>
   <Structure_O xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -1134,6 +1368,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5026</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5027</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_O>
   <Structure_P xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -1175,6 +1427,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5028</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5029</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_P>
   <Structure_Q xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -1216,6 +1486,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5030</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5031</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_Q>
   <Structure_R xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -1257,6 +1545,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5032</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5033</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_R>
   <Structure_S xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -1298,6 +1604,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5034</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5035</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_S>
   <Structure_T xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -1339,6 +1663,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5036</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5037</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </Structure_T>
   <LargeComplexStructure xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>DataType_64</uax:NodeClass>
@@ -1703,6 +2045,24 @@
         </uax:StructureDefinition>
       </uax:Body>
     </uax:DataTypeDefinition>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5038</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=38</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=5039</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
   </LargeComplexStructure>
   <Structure_A_Type xmlns="http://test.org/UA/StructuresWithArrays/">
     <uax:NodeClass>VariableType_16</uax:NodeClass>

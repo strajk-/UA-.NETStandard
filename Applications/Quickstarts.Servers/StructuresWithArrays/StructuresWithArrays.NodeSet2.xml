@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2022-10-28T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2022-10-30T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://test.org/UA/StructuresWithArrays/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://test.org/UA/StructuresWithArrays/" Version="1.0.0" PublicationDate="2022-10-28T00:00:00Z">
+    <Model ModelUri="http://test.org/UA/StructuresWithArrays/" Version="1.0.0" PublicationDate="2022-10-30T00:00:00Z">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.10" PublicationDate="2021-09-15T00:00:00Z" />
     </Model>
   </Models>
@@ -56,7 +56,7 @@
     <Alias Alias="HasAddIn">i=17604</Alias>
     <Alias Alias="HasInterface">i=17603</Alias>
   </Aliases>
-  <UAObject NodeId="ns=1;i=5000" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5000" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -74,7 +74,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5003" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5003" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -86,7 +86,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5005" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5005" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -98,7 +98,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5007" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5007" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -110,7 +110,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5009" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5009" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -122,7 +122,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5011" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5011" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -134,7 +134,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5013" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5013" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -146,7 +146,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5015" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5015" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -158,7 +158,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5017" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5017" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -170,7 +170,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5019" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5019" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -182,7 +182,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5021" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5021" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -194,7 +194,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5023" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5023" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -206,7 +206,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5025" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5025" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -218,7 +218,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5027" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5027" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -230,7 +230,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5029" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5029" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -242,7 +242,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5031" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5031" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -254,7 +254,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5033" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5033" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -266,7 +266,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5035" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5035" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -278,7 +278,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5037" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5037" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -290,7 +290,7 @@
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5039" BrowseName="Default XML" SymbolicName="DefaultXML">
+  <UAObject NodeId="ns=1;i=5039" BrowseName="Default XML" SymbolicName="DefaultXml">
     <DisplayName>Default XML</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
@@ -299,6 +299,8 @@
   <UADataType NodeId="ns=1;i=1000" BrowseName="1:Structure A" SymbolicName="Structure_A">
     <DisplayName>Structure A</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5000</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5001</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure A" SymbolicName="Structure_A">
@@ -309,6 +311,8 @@
   <UADataType NodeId="ns=1;i=1001" BrowseName="1:Structure B" SymbolicName="Structure_B">
     <DisplayName>Structure B</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5002</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5003</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure B" SymbolicName="Structure_B">
@@ -319,6 +323,8 @@
   <UADataType NodeId="ns=1;i=1002" BrowseName="1:Structure C" SymbolicName="Structure_C">
     <DisplayName>Structure C</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5004</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5005</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure C" SymbolicName="Structure_C">
@@ -329,6 +335,8 @@
   <UADataType NodeId="ns=1;i=1003" BrowseName="1:Structure D" SymbolicName="Structure_D">
     <DisplayName>Structure D</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5006</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5007</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure D" SymbolicName="Structure_D">
@@ -338,6 +346,8 @@
   <UADataType NodeId="ns=1;i=1004" BrowseName="1:Structure E" SymbolicName="Structure_E">
     <DisplayName>Structure E</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5008</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5009</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure E" SymbolicName="Structure_E">
@@ -347,6 +357,8 @@
   <UADataType NodeId="ns=1;i=1005" BrowseName="1:Structure F" SymbolicName="Structure_F">
     <DisplayName>Structure F</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5010</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5011</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure F" SymbolicName="Structure_F">
@@ -356,6 +368,8 @@
   <UADataType NodeId="ns=1;i=1006" BrowseName="1:Structure G" SymbolicName="Structure_G">
     <DisplayName>Structure G</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5012</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5013</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure G" SymbolicName="Structure_G">
@@ -365,6 +379,8 @@
   <UADataType NodeId="ns=1;i=1007" BrowseName="1:Structure H" SymbolicName="Structure_H">
     <DisplayName>Structure H</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5014</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5015</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure H" SymbolicName="Structure_H">
@@ -374,6 +390,8 @@
   <UADataType NodeId="ns=1;i=1008" BrowseName="1:Structure J" SymbolicName="Structure_J">
     <DisplayName>Structure J</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5016</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5017</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure J" SymbolicName="Structure_J">
@@ -383,6 +401,8 @@
   <UADataType NodeId="ns=1;i=1009" BrowseName="1:Structure K" SymbolicName="Structure_K">
     <DisplayName>Structure K</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5018</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5019</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure K" SymbolicName="Structure_K">
@@ -392,6 +412,8 @@
   <UADataType NodeId="ns=1;i=1010" BrowseName="1:Structure L" SymbolicName="Structure_L">
     <DisplayName>Structure L</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5020</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5021</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure L" SymbolicName="Structure_L">
@@ -401,6 +423,8 @@
   <UADataType NodeId="ns=1;i=1011" BrowseName="1:Structure M" SymbolicName="Structure_M">
     <DisplayName>Structure M</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5022</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5023</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure M" SymbolicName="Structure_M">
@@ -410,6 +434,8 @@
   <UADataType NodeId="ns=1;i=1012" BrowseName="1:Structure N" SymbolicName="Structure_N">
     <DisplayName>Structure N</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5024</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5025</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure N" SymbolicName="Structure_N">
@@ -419,6 +445,8 @@
   <UADataType NodeId="ns=1;i=1013" BrowseName="1:Structure O" SymbolicName="Structure_O">
     <DisplayName>Structure O</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5026</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5027</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure O" SymbolicName="Structure_O">
@@ -428,6 +456,8 @@
   <UADataType NodeId="ns=1;i=1014" BrowseName="1:Structure P" SymbolicName="Structure_P">
     <DisplayName>Structure P</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5028</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5029</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure P" SymbolicName="Structure_P">
@@ -437,6 +467,8 @@
   <UADataType NodeId="ns=1;i=1015" BrowseName="1:Structure Q" SymbolicName="Structure_Q">
     <DisplayName>Structure Q</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5030</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5031</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure Q" SymbolicName="Structure_Q">
@@ -446,6 +478,8 @@
   <UADataType NodeId="ns=1;i=1016" BrowseName="1:Structure R" SymbolicName="Structure_R">
     <DisplayName>Structure R</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5032</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5033</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure R" SymbolicName="Structure_R">
@@ -455,6 +489,8 @@
   <UADataType NodeId="ns=1;i=1017" BrowseName="1:Structure S" SymbolicName="Structure_S">
     <DisplayName>Structure S</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5034</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5035</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure S" SymbolicName="Structure_S">
@@ -464,6 +500,8 @@
   <UADataType NodeId="ns=1;i=1018" BrowseName="1:Structure T" SymbolicName="Structure_T">
     <DisplayName>Structure T</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5036</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5037</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:Structure T" SymbolicName="Structure_T">
@@ -473,6 +511,8 @@
   <UADataType NodeId="ns=1;i=2000" BrowseName="1:LargeComplexStructure">
     <DisplayName>LargeComplexStructure</DisplayName>
     <References>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5038</Reference>
+      <Reference ReferenceType="HasEncoding">ns=1;i=5039</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
     </References>
     <Definition Name="1:LargeComplexStructure">
