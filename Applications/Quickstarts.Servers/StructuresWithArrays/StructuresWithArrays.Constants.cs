@@ -230,6 +230,9 @@ namespace StructuresWithArrays
 
         /// <remarks />
         public const uint LargeComplexStructure_Encoding_DefaultXml = 5039;
+
+        /// <remarks />
+        public const uint Structures = 5043;
     }
     #endregion
 
@@ -239,6 +242,192 @@ namespace StructuresWithArrays
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class Variables
     {
+        /// <remarks />
+        public const uint Structures_OneDimArray_Structure_A_Array_Duration_Field = 6203;
+
+        /// <remarks />
+        public const uint Structures_OneDimArray_Structure_A_Array_Double_Field = 6202;
+
+        /// <remarks />
+        public const uint Structures_Scalar_Structure_A_Duration_Field = 6206;
+
+        /// <remarks />
+        public const uint Structures_Scalar_Structure_A_Double_Field = 6205;
+
+        /// <remarks />
+        public const uint Structures_TwoDimArray_Structure_A_Duration_Field = 6209;
+
+        /// <remarks />
+        public const uint Structures_TwoDimArray_Structure_A_Double_Field = 6208;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_BaseDataType = 6177;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_Structure = 6183;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_ApplicationDescription = 6176;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_ApplicationDescription_ApplicationUri = 6191;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_ApplicationDescription_ProductUri = 6195;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_ApplicationDescription_ApplicationName = 6189;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_ApplicationDescription_ApplicationType = 6190;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_ApplicationDescription_GatewayServerUri = 6194;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_ApplicationDescription_DiscoveryProfileUri = 6192;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_ApplicationDescription_DiscoveryUrls = 6193;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_Structure_A = 6184;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_Structure_A_Duration_Field = 6199;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_Structure_A_Double_Field = 6198;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_Structure_B = 6185;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_Structure_B_Int32_Field = 6200;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_Boolean = 6178;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_Duration = 6179;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_RolePermissionType = 6180;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_RolePermissionType_RoleId = 6197;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_RolePermissionType_Permissions = 6196;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_String_no_max_length = 6181;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_Scalar_String_within_max_length = 6182;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_String_no_max_length = 6166;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_String_within_max_length = 6167;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_BaseDataType = 6158;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_Structure__unknown_ = 6163;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_Structure__known_ = 6162;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_ApplicationDescription = 6157;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__ApplicationUri = 6097;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__ProductUri = 6098;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__ApplicationName = 6099;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__ApplicationType = 6100;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__GatewayServerUri = 6101;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__DiscoveryProfileUri = 6102;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__DiscoveryUrls = 6103;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_Structure_A = 6164;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_Structure_A_S1D_Array_of_Structure_A_no__Duration_Field = 6104;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_Structure_A_S1D_Array_of_Structure_A_no__Double_Field = 6105;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_Structure_B = 6165;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_Structure_B_S1D_Array_of_Structure_B_no__Int32_Field = 6107;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_Boolean = 6159;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_Duration = 6160;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_RolePermissionType = 6161;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_RolePermissionType_S1D_Array_of_RolePermissionType_no__RoleId = 6108;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S1D_Array_of_RolePermissionType_S1D_Array_of_RolePermissionType_no__Permissions = 6109;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S2D_Array_of_BaseDataType = 6169;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S2D_Array_of_Structure = 6173;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S2D_Array_of_ApplicationDescription = 6168;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S2D_Array_of_Structure_A = 6174;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S2D_Array_of_Structure_A_Duration_Field = 6187;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S2D_Array_of_Structure_A_Double_Field = 6186;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S2D_Array_of_Structure_B = 6175;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S2D_Array_of_Structure_B_Int32_Field = 6188;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S2D_Array_of_Boolean = 6170;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S2D_Array_of_Duration = 6171;
+
+        /// <remarks />
+        public const uint Structures_LargeArray_S2D_Array_of_RolePermissionType = 6172;
+
         /// <remarks />
         public const uint Structure_A_Type_Duration_Field = 6000;
 
@@ -847,6 +1036,9 @@ namespace StructuresWithArrays
 
         /// <remarks />
         public static readonly ExpandedNodeId LargeComplexStructure_Encoding_DefaultXml = new ExpandedNodeId(StructuresWithArrays.Objects.LargeComplexStructure_Encoding_DefaultXml, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures = new ExpandedNodeId(StructuresWithArrays.Objects.Structures, StructuresWithArrays.Namespaces.StructuresWithArrays);
     }
     #endregion
 
@@ -856,6 +1048,192 @@ namespace StructuresWithArrays
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
     public static partial class VariableIds
     {
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_OneDimArray_Structure_A_Array_Duration_Field = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_OneDimArray_Structure_A_Array_Duration_Field, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_OneDimArray_Structure_A_Array_Double_Field = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_OneDimArray_Structure_A_Array_Double_Field, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_Scalar_Structure_A_Duration_Field = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_Scalar_Structure_A_Duration_Field, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_Scalar_Structure_A_Double_Field = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_Scalar_Structure_A_Double_Field, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_TwoDimArray_Structure_A_Duration_Field = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_TwoDimArray_Structure_A_Duration_Field, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_TwoDimArray_Structure_A_Double_Field = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_TwoDimArray_Structure_A_Double_Field, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_BaseDataType = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_BaseDataType, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_Structure = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_Structure, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_ApplicationDescription = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_ApplicationDescription, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_ApplicationDescription_ApplicationUri = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_ApplicationDescription_ApplicationUri, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_ApplicationDescription_ProductUri = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_ApplicationDescription_ProductUri, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_ApplicationDescription_ApplicationName = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_ApplicationDescription_ApplicationName, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_ApplicationDescription_ApplicationType = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_ApplicationDescription_ApplicationType, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_ApplicationDescription_GatewayServerUri = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_ApplicationDescription_GatewayServerUri, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_ApplicationDescription_DiscoveryProfileUri = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_ApplicationDescription_DiscoveryProfileUri, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_ApplicationDescription_DiscoveryUrls = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_ApplicationDescription_DiscoveryUrls, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_Structure_A = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_Structure_A, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_Structure_A_Duration_Field = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_Structure_A_Duration_Field, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_Structure_A_Double_Field = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_Structure_A_Double_Field, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_Structure_B = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_Structure_B, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_Structure_B_Int32_Field = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_Structure_B_Int32_Field, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_Boolean = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_Boolean, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_Duration = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_Duration, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_RolePermissionType = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_RolePermissionType, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_RolePermissionType_RoleId = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_RolePermissionType_RoleId, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_RolePermissionType_Permissions = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_RolePermissionType_Permissions, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_String_no_max_length = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_String_no_max_length, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_Scalar_String_within_max_length = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_Scalar_String_within_max_length, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_String_no_max_length = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_String_no_max_length, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_String_within_max_length = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_String_within_max_length, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_BaseDataType = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_BaseDataType, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_Structure__unknown_ = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_Structure__unknown_, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_Structure__known_ = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_Structure__known_, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_ApplicationDescription = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_ApplicationDescription, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__ApplicationUri = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__ApplicationUri, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__ProductUri = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__ProductUri, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__ApplicationName = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__ApplicationName, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__ApplicationType = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__ApplicationType, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__GatewayServerUri = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__GatewayServerUri, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__DiscoveryProfileUri = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__DiscoveryProfileUri, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__DiscoveryUrls = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_ApplicationDescription_S1D_Array_of_ApplicationDescription_no__DiscoveryUrls, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_Structure_A = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_Structure_A, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_Structure_A_S1D_Array_of_Structure_A_no__Duration_Field = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_Structure_A_S1D_Array_of_Structure_A_no__Duration_Field, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_Structure_A_S1D_Array_of_Structure_A_no__Double_Field = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_Structure_A_S1D_Array_of_Structure_A_no__Double_Field, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_Structure_B = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_Structure_B, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_Structure_B_S1D_Array_of_Structure_B_no__Int32_Field = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_Structure_B_S1D_Array_of_Structure_B_no__Int32_Field, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_Boolean = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_Boolean, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_Duration = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_Duration, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_RolePermissionType = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_RolePermissionType, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_RolePermissionType_S1D_Array_of_RolePermissionType_no__RoleId = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_RolePermissionType_S1D_Array_of_RolePermissionType_no__RoleId, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S1D_Array_of_RolePermissionType_S1D_Array_of_RolePermissionType_no__Permissions = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S1D_Array_of_RolePermissionType_S1D_Array_of_RolePermissionType_no__Permissions, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S2D_Array_of_BaseDataType = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S2D_Array_of_BaseDataType, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S2D_Array_of_Structure = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S2D_Array_of_Structure, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S2D_Array_of_ApplicationDescription = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S2D_Array_of_ApplicationDescription, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S2D_Array_of_Structure_A = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S2D_Array_of_Structure_A, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S2D_Array_of_Structure_A_Duration_Field = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S2D_Array_of_Structure_A_Duration_Field, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S2D_Array_of_Structure_A_Double_Field = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S2D_Array_of_Structure_A_Double_Field, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S2D_Array_of_Structure_B = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S2D_Array_of_Structure_B, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S2D_Array_of_Structure_B_Int32_Field = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S2D_Array_of_Structure_B_Int32_Field, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S2D_Array_of_Boolean = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S2D_Array_of_Boolean, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S2D_Array_of_Duration = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S2D_Array_of_Duration, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Structures_LargeArray_S2D_Array_of_RolePermissionType = new ExpandedNodeId(StructuresWithArrays.Variables.Structures_LargeArray_S2D_Array_of_RolePermissionType, StructuresWithArrays.Namespaces.StructuresWithArrays);
+
         /// <remarks />
         public static readonly ExpandedNodeId Structure_A_Type_Duration_Field = new ExpandedNodeId(StructuresWithArrays.Variables.Structure_A_Type_Duration_Field, StructuresWithArrays.Namespaces.StructuresWithArrays);
 
@@ -1286,6 +1664,9 @@ namespace StructuresWithArrays
         public const string Int32_Field = "Int32 Field";
 
         /// <remarks />
+        public const string LargeArray = "LargeArray";
+
+        /// <remarks />
         public const string LargeComplexStructure = "LargeComplexStructure";
 
         /// <remarks />
@@ -1293,6 +1674,9 @@ namespace StructuresWithArrays
 
         /// <remarks />
         public const string NodeId_Field = "NodeId Field";
+
+        /// <remarks />
+        public const string OneDimArray = "OneDimArray";
 
         /// <remarks />
         public const string S1D_Array_of_ApplicationDescription = "1D Array of ApplicationDescription";
@@ -1359,6 +1743,9 @@ namespace StructuresWithArrays
 
         /// <remarks />
         public const string S2D_Array_String_within_max_length = "2D Array String within max length";
+
+        /// <remarks />
+        public const string Scalar = "Scalar";
 
         /// <remarks />
         public const string Scalar_ApplicationDescription = "Scalar ApplicationDescription";
@@ -1506,6 +1893,12 @@ namespace StructuresWithArrays
 
         /// <remarks />
         public const string Structure_T_Type = "Structure T Type";
+
+        /// <remarks />
+        public const string Structures = "Structures";
+
+        /// <remarks />
+        public const string TwoDimArray = "TwoDimArray";
     }
     #endregion
 
