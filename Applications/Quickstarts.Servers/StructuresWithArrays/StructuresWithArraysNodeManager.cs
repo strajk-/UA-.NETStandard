@@ -128,9 +128,11 @@ namespace StructuresWithArrays
             lock (Lock)
             {
                 // ensure the namespace used by the node manager is in the server's namespace table.
-                m_namespaceIndex = m_typeNamespaceIndex = Server.NamespaceUris.GetIndexOrAppend(Namespaces.StructuresWithArrays);
+                m_namespaceIndex = Server.NamespaceUris.GetIndexOrAppend(Namespaces.StructuresWithArrays);
 
                 base.CreateAddressSpace(externalReferences);
+
+                CreateStructures(SystemContext);
             }
         }
 
@@ -150,7 +152,350 @@ namespace StructuresWithArrays
         /// </summary>
         protected override NodeState AddBehaviourToPredefinedNode(ISystemContext context, NodeState predefinedNode)
         {
-            BaseObjectState passiveNode = predefinedNode as BaseObjectState;
+            var variableNode = predefinedNode as BaseVariableState;
+            if (variableNode != null)
+            {
+                if (variableNode.Value == null)
+                {
+                    var dataTypeId = variableNode.DataType;
+                    if (IsNodeIdInNamespace(variableNode.DataType))
+                    {
+                        if (variableNode.Parent is BaseVariableTypeState)
+                        {
+                            return predefinedNode;
+                        }
+
+                        switch ((uint)dataTypeId.Identifier)
+                        {
+                            case DataTypes.Structure_A:
+                            {
+                                if (variableNode is Structure_A_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_A_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_B:
+                            {
+                                if (variableNode is Structure_B_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_B_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_C:
+                            {
+                                if (variableNode is Structure_C_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_C_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_D:
+                            {
+                                if (variableNode is Structure_D_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_D_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_E:
+                            {
+                                if (variableNode is Structure_E_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_E_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_F:
+                            {
+                                if (variableNode is Structure_F_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_F_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_G:
+                            {
+                                if (variableNode is Structure_G_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_G_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_H:
+                            {
+                                if (variableNode is Structure_H_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_H_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_J:
+                            {
+                                if (variableNode is Structure_J_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_J_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_K:
+                            {
+                                if (variableNode is Structure_K_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_K_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_L:
+                            {
+                                if (variableNode is Structure_L_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_L_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_M:
+                            {
+                                if (variableNode is Structure_M_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_M_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_N:
+                            {
+                                if (variableNode is Structure_N_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_N_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_O:
+                            {
+                                if (variableNode is Structure_O_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_O_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_P:
+                            {
+                                if (variableNode is Structure_P_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_P_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_Q:
+                            {
+                                if (variableNode is Structure_Q_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_Q_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_R:
+                            {
+                                if (variableNode is Structure_R__TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_R__TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_S:
+                            {
+                                if (variableNode is Structure_S_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_S_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.Structure_T:
+                            {
+                                if (variableNode is Structure_T_TypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new Structure_T_TypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+                            case DataTypes.LargeComplexStructure:
+                            {
+                                if (variableNode is LargeComplexStructureTypeState)
+                                {
+                                    break;
+                                }
+
+                                var activeNode = new LargeComplexStructureTypeState(variableNode.Parent);
+                                activeNode.Create(context, variableNode);
+
+                                if (variableNode.Parent != null)
+                                {
+                                    variableNode.Parent.ReplaceChild(context, activeNode);
+                                }
+                                return activeNode;
+                            }
+
+                            default: break;
+                        }
+                    }
+                }
+            }
+
+            var passiveNode = predefinedNode as BaseObjectState;
 
             if (passiveNode == null)
             {
@@ -166,14 +511,47 @@ namespace StructuresWithArrays
 
             return predefinedNode;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private void CreateStructures(ServerSystemContext systemContext)
+        {
+            const uint Structures_LargeArray = 6156;
+            var structures_largearray = new ExpandedNodeId(Structures_LargeArray, Namespaces.StructuresWithArrays);
+
+            LargeComplexStructureTypeState variable = FindPredefinedNode(
+                ExpandedNodeId.ToNodeId(structures_largearray, Server.NamespaceUris),
+                typeof(LargeComplexStructureTypeState)) as LargeComplexStructureTypeState;
+            if (variable != null)
+            {
+                m_largeArray = new LargeComplexStructureTypeValue(variable, null, m_lock);
+            }
+
+            const uint Structures_Structure_A = 6204;
+            var structures_structure_A = new ExpandedNodeId(Structures_Structure_A, Namespaces.StructuresWithArrays);
+
+            Structure_A_TypeState variable2 = FindPredefinedNode(
+                ExpandedNodeId.ToNodeId(structures_structure_A, Server.NamespaceUris),
+                typeof(Structure_A_TypeState)) as Structure_A_TypeState;
+            if (variable2 != null)
+            {
+                m_structureA = new Structure_A_TypeValue(variable2, null, m_lock);
+            }
+        }
         #endregion
 
         #region Private Fields
+        private object m_lock = new object();
         private StructuresWithArraysConfiguration m_configuration;
         private ushort m_namespaceIndex;
-        private ushort m_typeNamespaceIndex;
         private StructuresWithArraysSystem m_system;
         private long m_lastUsedId;
+        // Variables
+        private LargeComplexStructureTypeValue m_largeArray;
+        private Structure_A_TypeValue m_structureA;
+        //private Structure_A_TypeValue m_largeArray;
+        //private Structure_A_TypeValue m_largeArray;
         #endregion
     }
 }
