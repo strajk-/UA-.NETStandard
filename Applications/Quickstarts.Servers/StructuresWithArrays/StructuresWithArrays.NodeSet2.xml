@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2022-10-30T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2022-10-28T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://test.org/UA/StructuresWithArrays/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://test.org/UA/StructuresWithArrays/" Version="1.0.0" PublicationDate="2022-10-30T00:00:00Z">
+    <Model ModelUri="http://test.org/UA/StructuresWithArrays/" Version="1.0.0" PublicationDate="2022-10-28T00:00:00Z">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.10" PublicationDate="2021-09-15T00:00:00Z" />
     </Model>
   </Models>
@@ -566,7 +566,7 @@
       <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5043</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6201" BrowseName="1:Structure A Array" SymbolicName="Structure_A_Array" ParentNodeId="ns=1;i=5040" DataType="ns=1;i=1000" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6201" BrowseName="1:Structure A Array" SymbolicName="Structure_A_Array" ParentNodeId="ns=1;i=5040" DataType="ns=1;i=1000" ValueRank="1" ArrayDimensions="3" AccessLevel="3">
     <DisplayName>Structure A Array</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6203</Reference>
@@ -593,6 +593,24 @@
     <DisplayName>Scalar</DisplayName>
     <References>
       <Reference ReferenceType="HasComponent">ns=1;i=6204</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6008</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6010</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6112</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6114</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6117</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6126</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6130</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6132</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6134</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6136</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6138</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6140</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6142</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6144</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6147</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6149</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6151</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6153</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
       <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5043</Reference>
     </References>
@@ -618,6 +636,356 @@
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6204</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6008" BrowseName="1:Structure B" SymbolicName="Structure_B" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1001" AccessLevel="3">
+    <DisplayName>Structure B</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6009</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2002</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6009" BrowseName="1:Int32 Field" SymbolicName="Int32_Field" ParentNodeId="ns=1;i=6008" DataType="Int32" AccessLevel="3">
+    <DisplayName>Int32 Field</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6008</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6010" BrowseName="1:Structure C" SymbolicName="Structure_C" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1002" AccessLevel="3">
+    <DisplayName>Structure C</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6011</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6111</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2003</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6011" BrowseName="1:Int32 Field" SymbolicName="Int32_Field" ParentNodeId="ns=1;i=6010" DataType="Int32" AccessLevel="3">
+    <DisplayName>Int32 Field</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6010</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6111" BrowseName="1:NodeId Field" SymbolicName="NodeId_Field" ParentNodeId="ns=1;i=6010" DataType="NodeId" AccessLevel="3">
+    <DisplayName>NodeId Field</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6010</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6112" BrowseName="1:Structure D" SymbolicName="Structure_D" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1003" AccessLevel="3">
+    <DisplayName>Structure D</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6113</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2004</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6113" BrowseName="1:Scalar BaseDataType" SymbolicName="Scalar_BaseDataType" ParentNodeId="ns=1;i=6112" AccessLevel="3">
+    <DisplayName>Scalar BaseDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6112</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6114" BrowseName="1:Structure E" SymbolicName="Structure_E" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1004" AccessLevel="3">
+    <DisplayName>Structure E</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6115</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2005</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6115" BrowseName="1:Scalar Structure" SymbolicName="Scalar_Structure" ParentNodeId="ns=1;i=6114" DataType="Structure" AccessLevel="3">
+    <DisplayName>Scalar Structure</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6114</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6117" BrowseName="1:Structure F" SymbolicName="Structure_F" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1005" AccessLevel="3">
+    <DisplayName>Structure F</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6118</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2006</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6118" BrowseName="1:Scalar ApplicationDescription" SymbolicName="Scalar_ApplicationDescription" ParentNodeId="ns=1;i=6117" DataType="i=308" AccessLevel="3">
+    <DisplayName>Scalar ApplicationDescription</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6121</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6125</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6119</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6120</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6124</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6122</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6123</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6117</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6121" BrowseName="1:ApplicationUri" ParentNodeId="ns=1;i=6118" DataType="String" AccessLevel="3">
+    <DisplayName>ApplicationUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6118</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6125" BrowseName="1:ProductUri" ParentNodeId="ns=1;i=6118" DataType="String" AccessLevel="3">
+    <DisplayName>ProductUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6118</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6119" BrowseName="1:ApplicationName" ParentNodeId="ns=1;i=6118" DataType="LocalizedText" AccessLevel="3">
+    <DisplayName>ApplicationName</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6118</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6120" BrowseName="1:ApplicationType" ParentNodeId="ns=1;i=6118" DataType="i=307" AccessLevel="3">
+    <DisplayName>ApplicationType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6118</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6124" BrowseName="1:GatewayServerUri" ParentNodeId="ns=1;i=6118" DataType="String" AccessLevel="3">
+    <DisplayName>GatewayServerUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6118</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6122" BrowseName="1:DiscoveryProfileUri" ParentNodeId="ns=1;i=6118" DataType="String" AccessLevel="3">
+    <DisplayName>DiscoveryProfileUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6118</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6123" BrowseName="1:DiscoveryUrls" ParentNodeId="ns=1;i=6118" DataType="String" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
+    <DisplayName>DiscoveryUrls</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6118</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6126" BrowseName="1:Structure G" SymbolicName="Structure_G" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1006" AccessLevel="3">
+    <DisplayName>Structure G</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6127</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2007</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6127" BrowseName="1:Scalar Structure A" SymbolicName="Scalar_Structure_A" ParentNodeId="ns=1;i=6126" DataType="ns=1;i=1000" AccessLevel="3">
+    <DisplayName>Scalar Structure A</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6129</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6128</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2001</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6126</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6129" BrowseName="1:Duration Field" SymbolicName="Duration_Field" ParentNodeId="ns=1;i=6127" DataType="i=290" AccessLevel="3">
+    <DisplayName>Duration Field</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6127</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6128" BrowseName="1:Double Field" SymbolicName="Double_Field" ParentNodeId="ns=1;i=6127" DataType="Double" AccessLevel="3">
+    <DisplayName>Double Field</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6127</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6130" BrowseName="1:Structure H" SymbolicName="Structure_H" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1007" AccessLevel="3">
+    <DisplayName>Structure H</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6131</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2008</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6131" BrowseName="1:Scalar Duration" SymbolicName="Scalar_Duration" ParentNodeId="ns=1;i=6130" DataType="i=290" AccessLevel="3">
+    <DisplayName>Scalar Duration</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6130</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6132" BrowseName="1:Structure J" SymbolicName="Structure_J" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1008" AccessLevel="3">
+    <DisplayName>Structure J</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6133</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2009</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6133" BrowseName="1:Scalar MessageSecurityMode" SymbolicName="Scalar_MessageSecurityMode" ParentNodeId="ns=1;i=6132" DataType="i=302" AccessLevel="3">
+    <DisplayName>Scalar MessageSecurityMode</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6132</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6134" BrowseName="1:Structure K" SymbolicName="Structure_K" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1009" AccessLevel="3">
+    <DisplayName>Structure K</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6135</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2010</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6135" BrowseName="1:1D Array String within max length" SymbolicName="S1D_Array_String_within_max_length" ParentNodeId="ns=1;i=6134" DataType="String" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
+    <DisplayName>1D Array String within max length</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6134</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6136" BrowseName="1:Structure L" SymbolicName="Structure_L" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1010" AccessLevel="3">
+    <DisplayName>Structure L</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6137</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2011</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6137" BrowseName="1:1D Array of BaseDataType" SymbolicName="S1D_Array_of_BaseDataType" ParentNodeId="ns=1;i=6136" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
+    <DisplayName>1D Array of BaseDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6136</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6138" BrowseName="1:Structure M" SymbolicName="Structure_M" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1011" AccessLevel="3">
+    <DisplayName>Structure M</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6139</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2012</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6139" BrowseName="1:1D Array of Structure (unknown)" SymbolicName="S1D_Array_of_Structure__unknown_" ParentNodeId="ns=1;i=6138" DataType="Structure" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
+    <DisplayName>1D Array of Structure (unknown)</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6138</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6140" BrowseName="1:Structure N" SymbolicName="Structure_N" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1012" AccessLevel="3">
+    <DisplayName>Structure N</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6141</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2013</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6141" BrowseName="1:1D Array of Structure (known)" SymbolicName="S1D_Array_of_Structure__known_" ParentNodeId="ns=1;i=6140" DataType="Structure" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
+    <DisplayName>1D Array of Structure (known)</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6140</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6142" BrowseName="1:Structure O" SymbolicName="Structure_O" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1013" AccessLevel="3">
+    <DisplayName>Structure O</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6143</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2014</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6143" BrowseName="1:1D Array of ApplicationDescription" SymbolicName="S1D_Array_of_ApplicationDescription" ParentNodeId="ns=1;i=6142" DataType="i=308" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
+    <DisplayName>1D Array of ApplicationDescription</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6142</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6144" BrowseName="1:Structure P" SymbolicName="Structure_P" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1014" AccessLevel="3">
+    <DisplayName>Structure P</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6145</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2015</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6145" BrowseName="1:2D Array String within max length" SymbolicName="S2D_Array_String_within_max_length" ParentNodeId="ns=1;i=6144" DataType="String" ValueRank="0" AccessLevel="3">
+    <DisplayName>2D Array String within max length</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6144</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6147" BrowseName="1:Structure Q" SymbolicName="Structure_Q" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1015" AccessLevel="3">
+    <DisplayName>Structure Q</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6148</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2016</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6148" BrowseName="1:2D Array of BaseDataType" SymbolicName="S2D_Array_of_BaseDataType" ParentNodeId="ns=1;i=6147" ValueRank="0" AccessLevel="3">
+    <DisplayName>2D Array of BaseDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6147</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6149" BrowseName="1:Structure R" SymbolicName="Structure_R" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1016" AccessLevel="3">
+    <DisplayName>Structure R</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6150</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2017</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6150" BrowseName="1:2D Array of Structure (unknown)" SymbolicName="S2D_Array_of_Structure__unknown_" ParentNodeId="ns=1;i=6149" DataType="Structure" ValueRank="0" AccessLevel="3">
+    <DisplayName>2D Array of Structure (unknown)</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6149</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6151" BrowseName="1:Structure S" SymbolicName="Structure_S" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1017" AccessLevel="3">
+    <DisplayName>Structure S</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6152</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2018</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6152" BrowseName="1:2D Array of Structure (known)" SymbolicName="S2D_Array_of_Structure__known_" ParentNodeId="ns=1;i=6151" DataType="Structure" ValueRank="0" AccessLevel="3">
+    <DisplayName>2D Array of Structure (known)</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6151</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6153" BrowseName="1:Structure T" SymbolicName="Structure_T" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1018" AccessLevel="3">
+    <DisplayName>Structure T</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6154</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=2019</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6154" BrowseName="1:2D Array of ApplicationDescription" SymbolicName="S2D_Array_of_ApplicationDescription" ParentNodeId="ns=1;i=6153" DataType="i=308" ValueRank="0" AccessLevel="3">
+    <DisplayName>2D Array of ApplicationDescription</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6153</Reference>
     </References>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5042" BrowseName="1:TwoDimArray" ParentNodeId="ns=1;i=5043">
