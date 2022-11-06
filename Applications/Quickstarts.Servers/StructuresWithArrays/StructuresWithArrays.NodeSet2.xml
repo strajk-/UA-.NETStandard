@@ -641,9 +641,17 @@
   <UAVariable NodeId="ns=1;i=6008" BrowseName="1:Structure B" SymbolicName="Structure_B" ParentNodeId="ns=1;i=5041" DataType="ns=1;i=1001" AccessLevel="3">
     <DisplayName>Structure B</DisplayName>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6116</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6009</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=2002</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6116" BrowseName="1:Duration Field" SymbolicName="Duration_Field" ParentNodeId="ns=1;i=6008" DataType="i=290" AccessLevel="3">
+    <DisplayName>Duration Field</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6008</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6009" BrowseName="1:Int32 Field" SymbolicName="Int32_Field" ParentNodeId="ns=1;i=6008" DataType="Int32" AccessLevel="3">
@@ -1158,9 +1166,17 @@
   <UAVariable NodeId="ns=1;i=6185" BrowseName="1:Scalar Structure B" SymbolicName="Scalar_Structure_B" ParentNodeId="ns=1;i=6156" DataType="ns=1;i=1001" AccessLevel="3">
     <DisplayName>Scalar Structure B</DisplayName>
     <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=6146</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6200</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=2002</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6156</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6146" BrowseName="1:Duration Field" SymbolicName="Duration_Field" ParentNodeId="ns=1;i=6185" DataType="i=290" AccessLevel="3">
+    <DisplayName>Duration Field</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6185</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6200" BrowseName="1:Int32 Field" SymbolicName="Int32_Field" ParentNodeId="ns=1;i=6185" DataType="Int32" AccessLevel="3">

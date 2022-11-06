@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<UANodeSet LastModified="2022-11-05T10:00:00.000Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<UANodeSet LastModified="2022-11-06T07:39:50.046Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <NamespaceUris>
         <Uri>http://test.org/UA/StructuresWithArrays/</Uri>
     </NamespaceUris>
@@ -28,7 +28,7 @@
             <si:Generator Product="SiOME" Edition="Standard" Version="2.5.12"/>
         </Extension>
         <Extension>
-            <si:GeneratorExtension Hash="da723ebba8802480cb484c72b2991092"/>
+            <si:GeneratorExtension Hash="aea4f1776fb8275cb65e57fdd353754a"/>
         </Extension>
     </Extensions>
     <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5000" BrowseName="Default XML">
@@ -2223,6 +2223,20 @@
         <DisplayName>2D Array of ApplicationDescription</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6153</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=290" NodeId="ns=1;i=6116" BrowseName="1:Duration Field" ParentNodeId="ns=1;i=6008" UserAccessLevel="3" AccessLevel="3" SymbolicName="Duration_Field">
+        <DisplayName>Duration Field</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6008</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=290" NodeId="ns=1;i=6146" BrowseName="1:Duration Field" ParentNodeId="ns=1;i=6185" UserAccessLevel="3" AccessLevel="3" SymbolicName="Duration_Field">
+        <DisplayName>Duration Field</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6185</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
         </References>
     </UAVariable>
