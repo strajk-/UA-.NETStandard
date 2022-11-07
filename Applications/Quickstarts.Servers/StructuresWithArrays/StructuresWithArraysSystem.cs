@@ -27,6 +27,8 @@
  * http://opcfoundation.org/License/MIT/1.00/
  * ======================================================================*/
 
+using System.CodeDom.Compiler;
+using System.Linq.Expressions;
 using Opc.Ua;
 using Opc.Ua.Server;
 
@@ -41,6 +43,48 @@ namespace StructuresWithArrays
             m_generator.ServerUris = serverUris;
             m_system = system;
         }
+
+        /// <summary>
+        /// The data generator for the system.
+        /// </summary>
+        public Opc.Ua.Test.DataGenerator DataGenerator => m_generator;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public Structure_A GetRandomStructureA()
+        {
+            return new Structure_A() {
+                Double_Field = m_generator.GetRandomDouble(),
+                Duration_Field = m_generator.GetRandomDouble()
+            };
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public Structure_B GetRandomStructureB()
+        {
+            return new Structure_B() {
+                Duration_Field = m_generator.GetRandomDouble(),
+                Int32_Field = m_generator.GetRandomInt32()
+            };
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public LargeComplexStructure GetRandomLargeComplexStructure()
+        {
+            return new LargeComplexStructure {
+                Scalar_Structure_A = GetRandomStructureA(),
+                Scalar_Structure_B = GetRandomStructureB(),
+                Scalar_Boolean = m_generator.GetRandomBoolean(),
+                Scalar_Duration = m_generator.GetRandomDouble(),
+                Scalar_String_within_max_length = m_generator.GetRandomString(),
+            };
+        }
+
 
         #region Private Fields
         private object m_lock = new object();
