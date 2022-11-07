@@ -29,15 +29,10 @@
 
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Diagnostics;
-using System.Xml;
-using System.IO;
-using System.Threading;
+using System.Linq;
+using System.Reflection;
 using Opc.Ua;
 using Opc.Ua.Server;
-using System.Reflection;
-using System.Linq;
 
 namespace StructuresWithArrays
 {
@@ -81,7 +76,8 @@ namespace StructuresWithArrays
             // update the namespaces.
             NamespaceUris = namespaceUris;
 
-            Server.Factory.AddEncodeableTypes(typeof(StructuresWithArraysNodeManager).Assembly.GetExportedTypes().Where(t => t.FullName.StartsWith(typeof(StructuresWithArraysNodeManager).Namespace)));
+            Server.Factory.AddEncodeableTypes(typeof(StructuresWithArraysNodeManager).Assembly.GetExportedTypes()
+                .Where(t => t.FullName.StartsWith(typeof(StructuresWithArraysNodeManager).Namespace, StringComparison.Ordinal)));
 
             // get the configuration for the node manager.
             m_configuration = configuration.ParseExtension<StructuresWithArraysConfiguration>();
@@ -181,7 +177,6 @@ namespace StructuresWithArrays
                                 {
                                     variableNode.Parent.ReplaceChild(context, activeNode);
                                 }
-
                                 return activeNode;
                             }
                             case DataTypes.Structure_B:
@@ -517,10 +512,24 @@ namespace StructuresWithArrays
         /// </summary>
         private void CreateStructures(ServerSystemContext systemContext)
         {
+            // Initialize Root Variables and structures in 
             {
                 const uint Structures_LargeArray = 6156;
                 LargeComplexStructureTypeState variable = FindTypeState<LargeComplexStructureTypeState>(Structures_LargeArray);
                 m_largeArray = new LargeComplexStructureTypeValue(variable, null, m_lock);
+                m_largeArray.Value = m_system.GetRandomLargeComplexStructure();
+            }
+            // hook up subproperties
+            {
+                Structure_A_TypeState variable = FindTypeState<Structure_A_TypeState>(Variables.Structures_LargeArray_Scalar_Structure_A);
+                var scalarStructureA = new Structure_A_TypeValue(variable, m_largeArray.Value.Scalar_Structure_A, m_lock);
+            }
+            {
+                Structure_B_TypeState variable = FindTypeState<Structure_B_TypeState>(Variables.Structures_LargeArray_Scalar_Structure_B);
+                var scalarStructureB = new Structure_B_TypeValue(variable, m_largeArray.Value.Scalar_Structure_B, m_lock);
+            }
+            {   // TODO: ApplicationDescription
+                /*ApplicationDescription*/ NodeState variable = FindTypeState<NodeState>(Variables.Structures_LargeArray_Scalar_ApplicationDescription);
             }
             {
                 const uint Structures_Structure_A = 6204;
@@ -531,6 +540,7 @@ namespace StructuresWithArrays
                 const uint Structures_Structure_B = 6008;
                 Structure_B_TypeState variable = FindTypeState<Structure_B_TypeState>(Structures_Structure_B);
                 m_scalarStructureB = new Structure_B_TypeValue(variable, null, m_lock);
+                m_scalarStructureB.Value = m_system.GetRandomStructureB();
             }
             {
                 const uint Structures_Structure_C = 6010;
@@ -627,12 +637,14 @@ namespace StructuresWithArrays
                 ExpandedNodeId.ToNodeId(expandedNodeId, Server.NamespaceUris),
                 typeof(TS)) as TS;
         }
+
+
         #endregion
 
         #region Private Fields
         private object m_lock = new object();
-        private StructuresWithArraysConfiguration m_configuration;
         private ushort m_namespaceIndex;
+        private StructuresWithArraysConfiguration m_configuration;
         private StructuresWithArraysSystem m_system;
         private long m_lastUsedId;
         // Variables
