@@ -29,8 +29,10 @@
 
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Reflection;
+using System.Security;
 using Opc.Ua;
 using Opc.Ua.Server;
 
@@ -129,6 +131,12 @@ namespace StructuresWithArrays
                 base.CreateAddressSpace(externalReferences);
 
                 CreateStructures(SystemContext);
+
+                ConfigurationNodeManager configurationNodeManager = Server.NodeManager.ConfigurationNodeManager;
+                if (configurationNodeManager != null)
+                {
+                    var nameSpaceMetaDataState = configurationNodeManager.CreateNamespaceMetadataState(Server.NamespaceUris.GetString(m_namespaceIndex));
+                }
             }
         }
 
@@ -154,7 +162,7 @@ namespace StructuresWithArrays
                 if (variableNode.Value == null)
                 {
                     var dataTypeId = variableNode.DataType;
-                    if (IsNodeIdInNamespace(variableNode.DataType))
+                    if (IsNodeIdInNamespace(dataTypeId))
                     {
                         if (variableNode.Parent is BaseVariableTypeState)
                         {
@@ -515,21 +523,40 @@ namespace StructuresWithArrays
             // Initialize Root Variables and structures in 
             {
                 const uint Structures_LargeArray = 6156;
-                LargeComplexStructureTypeState variable = FindTypeState<LargeComplexStructureTypeState>(Structures_LargeArray);
+                var variable = FindTypeState<LargeComplexStructureTypeState>(Structures_LargeArray);
                 m_largeArray = new LargeComplexStructureTypeValue(variable, null, m_lock);
                 m_largeArray.Value = m_system.GetRandomLargeComplexStructure();
             }
-            // hook up subproperties
+            // hook up subproperties of large structure
             {
-                Structure_A_TypeState variable = FindTypeState<Structure_A_TypeState>(Variables.Structures_LargeArray_Scalar_Structure_A);
+                var variable = FindTypeState<Structure_A_TypeState>(Variables.Structures_LargeArray_Scalar_Structure_A);
                 var scalarStructureA = new Structure_A_TypeValue(variable, m_largeArray.Value.Scalar_Structure_A, m_lock);
             }
             {
-                Structure_B_TypeState variable = FindTypeState<Structure_B_TypeState>(Variables.Structures_LargeArray_Scalar_Structure_B);
+                var variable = FindTypeState<Structure_B_TypeState>(Variables.Structures_LargeArray_Scalar_Structure_B);
                 var scalarStructureB = new Structure_B_TypeValue(variable, m_largeArray.Value.Scalar_Structure_B, m_lock);
             }
-            {   // TODO: ApplicationDescription
-                /*ApplicationDescription*/ NodeState variable = FindTypeState<NodeState>(Variables.Structures_LargeArray_Scalar_ApplicationDescription);
+            {
+                var variable = FindTypeState<BaseDataVariableState<RolePermissionType>>(Variables.Structures_LargeArray_Scalar_RolePermissionType);
+                var roleId = FindTypeState<BaseDataVariableState>(Variables.Structures_LargeArray_Scalar_RolePermissionType_RoleId);
+                var permissions = FindTypeState<BaseDataVariableState>(Variables.Structures_LargeArray_Scalar_RolePermissionType_Permissions);
+                var variableStates = new List<BaseVariableState>() { roleId, permissions };
+                var scalerRolePermissionType = new PropertyTypeValue<RolePermissionType>(variable, variableStates, m_largeArray.Value.Scalar_RolePermissionType, m_lock);
+            }
+            {
+                var variable = FindTypeState<BaseDataVariableState<ApplicationDescription>>(Variables.Structures_LargeArray_Scalar_ApplicationDescription);
+                var applicationName = FindTypeState<BaseDataVariableState>(Variables.Structures_LargeArray_Scalar_ApplicationDescription_ApplicationName);
+                var applicationType = FindTypeState<BaseDataVariableState>(Variables.Structures_LargeArray_Scalar_ApplicationDescription_ApplicationType);
+                var applicationUri = FindTypeState<BaseDataVariableState>(Variables.Structures_LargeArray_Scalar_ApplicationDescription_ApplicationUri);
+                var discoveryProfileUri = FindTypeState<BaseDataVariableState>(Variables.Structures_LargeArray_Scalar_ApplicationDescription_DiscoveryProfileUri);
+                var discoveryUrls = FindTypeState<BaseDataVariableState>(Variables.Structures_LargeArray_Scalar_ApplicationDescription_DiscoveryUrls);
+                var gatewayServerUri = FindTypeState<BaseDataVariableState>(Variables.Structures_LargeArray_Scalar_ApplicationDescription_GatewayServerUri);
+                var productUri = FindTypeState<BaseDataVariableState>(Variables.Structures_LargeArray_Scalar_ApplicationDescription_ProductUri);
+                var variableStates = new List<BaseVariableState>() {
+                    applicationName, applicationType, applicationUri,
+                    discoveryProfileUri, discoveryUrls, gatewayServerUri, productUri
+                    };
+                var scalerApplicationDescription = new PropertyTypeValue<ApplicationDescription>(variable, variableStates, m_largeArray.Value.Scalar_ApplicationDescription, m_lock);
             }
             {
                 const uint Structures_Structure_A = 6204;
@@ -637,8 +664,6 @@ namespace StructuresWithArrays
                 ExpandedNodeId.ToNodeId(expandedNodeId, Server.NamespaceUris),
                 typeof(TS)) as TS;
         }
-
-
         #endregion
 
         #region Private Fields
@@ -670,4 +695,152 @@ namespace StructuresWithArrays
         private Structure_T_TypeValue m_scalarStructureT;
         #endregion
     }
+
+    #region PropertyTypeValue Class
+    /// <remarks />
+    /// <exclude />
+    public class PropertyTypeValue<T> : BaseVariableValue
+    {
+        #region Constructors
+        /// <remarks />
+        public PropertyTypeValue(BaseDataVariableState<T> variable, List<BaseVariableState> variableStates, T value, object dataLock) : base(dataLock)
+        {
+            m_value = value;
+
+            if (m_value == null)
+            {
+                //m_value = new T();
+            }
+
+            Initialize(variable, variableStates);
+        }
+        #endregion
+
+        #region Public Members
+        /// <remarks />
+        public BaseDataVariableState<T> Variable
+        {
+            get { return m_variable; }
+        }
+
+        /// <remarks />
+        public T Value
+        {
+            get { return m_value; }
+            set { m_value = value; }
+        }
+        #endregion
+
+        #region Private Methods
+        private void Initialize(BaseDataVariableState<T> variable, List<BaseVariableState> variableStates)
+        {
+            lock (Lock)
+            {
+                m_variable = variable;
+                m_variableStates = variableStates;
+
+                variable.Value = m_value;
+
+                variable.OnReadValue = OnReadValue;
+                variable.OnSimpleWriteValue = OnWriteValue;
+
+                List<BaseInstanceState> updateList = new List<BaseInstanceState>();
+                updateList.Add(variable);
+
+                foreach (var instance in m_variableStates)
+                {
+                    instance.OnReadValue = OnRead_Field;
+                    instance.OnSimpleWriteValue = OnWrite_Field;
+                    updateList.Add(instance);
+                }
+
+                SetUpdateList(updateList);
+            }
+        }
+
+        /// <remarks />
+        protected ServiceResult OnReadValue(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        private ServiceResult OnWriteValue(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value = (T)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+
+        #region Field Access Methods
+        /// <remarks />
+        private ServiceResult OnRead_Field(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    var property = typeof(T).GetProperty(node.DisplayName.Text);
+                    if (property != null)
+                    {
+                        value = property.GetValue(m_value);
+                    }
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <remarks />
+        private ServiceResult OnWrite_Field(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                var property = typeof(T).GetProperty(node.DisplayName.Text);
+                if (property != null)
+                {
+                    property.SetValue(m_value, Write(value));
+                }
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+        #endregion
+
+        #region Private Fields
+        private T m_value;
+        private BaseDataVariableState<T> m_variable;
+        private List<BaseVariableState> m_variableStates;
+        #endregion
+    }
+    #endregion
 }
