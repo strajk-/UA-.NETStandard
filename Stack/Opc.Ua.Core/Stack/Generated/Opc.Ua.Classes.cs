@@ -11575,12 +11575,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -12046,6 +12046,30 @@ namespace Opc.Ua
                 instance.OnReadValue = OnRead_BuildInfo;
                 instance.OnSimpleWriteValue = OnWrite_BuildInfo;
                 updateList.Add(instance);
+                instance = m_variable.BuildInfo.ProductUri;
+                instance.OnReadValue = OnRead_BuildInfo_ProductUri;
+                instance.OnSimpleWriteValue = OnWrite_BuildInfo_ProductUri;
+                updateList.Add(instance);
+                instance = m_variable.BuildInfo.ManufacturerName;
+                instance.OnReadValue = OnRead_BuildInfo_ManufacturerName;
+                instance.OnSimpleWriteValue = OnWrite_BuildInfo_ManufacturerName;
+                updateList.Add(instance);
+                instance = m_variable.BuildInfo.ProductName;
+                instance.OnReadValue = OnRead_BuildInfo_ProductName;
+                instance.OnSimpleWriteValue = OnWrite_BuildInfo_ProductName;
+                updateList.Add(instance);
+                instance = m_variable.BuildInfo.SoftwareVersion;
+                instance.OnReadValue = OnRead_BuildInfo_SoftwareVersion;
+                instance.OnSimpleWriteValue = OnWrite_BuildInfo_SoftwareVersion;
+                updateList.Add(instance);
+                instance = m_variable.BuildInfo.BuildNumber;
+                instance.OnReadValue = OnRead_BuildInfo_BuildNumber;
+                instance.OnSimpleWriteValue = OnWrite_BuildInfo_BuildNumber;
+                updateList.Add(instance);
+                instance = m_variable.BuildInfo.BuildDate;
+                instance.OnReadValue = OnRead_BuildInfo_BuildDate;
+                instance.OnSimpleWriteValue = OnWrite_BuildInfo_BuildDate;
+                updateList.Add(instance);
                 instance = m_variable.SecondsTillShutdown;
                 instance.OnReadValue = OnRead_SecondsTillShutdown;
                 instance.OnSimpleWriteValue = OnWrite_SecondsTillShutdown;
@@ -12230,6 +12254,222 @@ namespace Opc.Ua
             lock (Lock)
             {
                 m_value.BuildInfo = (BuildInfo)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region BuildInfo_ProductUri Access Methods
+        /// <remarks />
+        private ServiceResult OnRead_BuildInfo_ProductUri(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.BuildInfo.ProductUri;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <remarks />
+        private ServiceResult OnWrite_BuildInfo_ProductUri(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.BuildInfo.ProductUri = (string)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region BuildInfo_ManufacturerName Access Methods
+        /// <remarks />
+        private ServiceResult OnRead_BuildInfo_ManufacturerName(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.BuildInfo.ManufacturerName;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <remarks />
+        private ServiceResult OnWrite_BuildInfo_ManufacturerName(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.BuildInfo.ManufacturerName = (string)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region BuildInfo_ProductName Access Methods
+        /// <remarks />
+        private ServiceResult OnRead_BuildInfo_ProductName(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.BuildInfo.ProductName;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <remarks />
+        private ServiceResult OnWrite_BuildInfo_ProductName(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.BuildInfo.ProductName = (string)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region BuildInfo_SoftwareVersion Access Methods
+        /// <remarks />
+        private ServiceResult OnRead_BuildInfo_SoftwareVersion(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.BuildInfo.SoftwareVersion;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <remarks />
+        private ServiceResult OnWrite_BuildInfo_SoftwareVersion(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.BuildInfo.SoftwareVersion = (string)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region BuildInfo_BuildNumber Access Methods
+        /// <remarks />
+        private ServiceResult OnRead_BuildInfo_BuildNumber(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.BuildInfo.BuildNumber;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <remarks />
+        private ServiceResult OnWrite_BuildInfo_BuildNumber(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.BuildInfo.BuildNumber = (string)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region BuildInfo_BuildDate Access Methods
+        /// <remarks />
+        private ServiceResult OnRead_BuildInfo_BuildDate(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.BuildInfo.BuildDate;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <remarks />
+        private ServiceResult OnWrite_BuildInfo_BuildDate(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.BuildInfo.BuildDate = (DateTime)Write(value);
             }
 
             return ServiceResult.Good;
@@ -23138,12 +23378,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -23450,12 +23690,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -23799,7 +24039,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             uint subscriptionId = (uint)_inputArguments[0];
 
@@ -23808,7 +24048,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -23820,7 +24060,7 @@ namespace Opc.Ua
             _outputArguments[0] = serverHandles;
             _outputArguments[1] = clientHandles;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -23904,20 +24144,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             uint subscriptionId = (uint)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     subscriptionId);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -24002,7 +24242,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             uint subscriptionId = (uint)_inputArguments[0];
             uint lifetimeInHours = (uint)_inputArguments[1];
@@ -24011,7 +24251,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -24022,7 +24262,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = revisedLifetimeInHours;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -24109,7 +24349,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             ServerState state = (ServerState)_inputArguments[0];
             DateTime estimatedReturnTime = (DateTime)_inputArguments[1];
@@ -24119,7 +24359,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -24130,7 +24370,7 @@ namespace Opc.Ua
                     restart);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -29097,9 +29337,33 @@ namespace Opc.Ua
                 instance.OnReadValue = OnRead_CartesianCoordinates;
                 instance.OnSimpleWriteValue = OnWrite_CartesianCoordinates;
                 updateList.Add(instance);
+                instance = m_variable.CartesianCoordinates.X;
+                instance.OnReadValue = OnRead_CartesianCoordinates_X;
+                instance.OnSimpleWriteValue = OnWrite_CartesianCoordinates_X;
+                updateList.Add(instance);
+                instance = m_variable.CartesianCoordinates.Y;
+                instance.OnReadValue = OnRead_CartesianCoordinates_Y;
+                instance.OnSimpleWriteValue = OnWrite_CartesianCoordinates_Y;
+                updateList.Add(instance);
+                instance = m_variable.CartesianCoordinates.Z;
+                instance.OnReadValue = OnRead_CartesianCoordinates_Z;
+                instance.OnSimpleWriteValue = OnWrite_CartesianCoordinates_Z;
+                updateList.Add(instance);
                 instance = m_variable.Orientation;
                 instance.OnReadValue = OnRead_Orientation;
                 instance.OnSimpleWriteValue = OnWrite_Orientation;
+                updateList.Add(instance);
+                instance = m_variable.Orientation.A;
+                instance.OnReadValue = OnRead_Orientation_A;
+                instance.OnSimpleWriteValue = OnWrite_Orientation_A;
+                updateList.Add(instance);
+                instance = m_variable.Orientation.B;
+                instance.OnReadValue = OnRead_Orientation_B;
+                instance.OnSimpleWriteValue = OnWrite_Orientation_B;
+                updateList.Add(instance);
+                instance = m_variable.Orientation.C;
+                instance.OnReadValue = OnRead_Orientation_C;
+                instance.OnSimpleWriteValue = OnWrite_Orientation_C;
                 updateList.Add(instance);
 
                 SetUpdateList(updateList);
@@ -29175,6 +29439,114 @@ namespace Opc.Ua
         }
         #endregion
 
+        #region CartesianCoordinates_X Access Methods
+        /// <remarks />
+        private ServiceResult OnRead_CartesianCoordinates_X(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.CartesianCoordinates.X;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <remarks />
+        private ServiceResult OnWrite_CartesianCoordinates_X(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.CartesianCoordinates.X = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region CartesianCoordinates_Y Access Methods
+        /// <remarks />
+        private ServiceResult OnRead_CartesianCoordinates_Y(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.CartesianCoordinates.Y;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <remarks />
+        private ServiceResult OnWrite_CartesianCoordinates_Y(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.CartesianCoordinates.Y = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region CartesianCoordinates_Z Access Methods
+        /// <remarks />
+        private ServiceResult OnRead_CartesianCoordinates_Z(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.CartesianCoordinates.Z;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <remarks />
+        private ServiceResult OnWrite_CartesianCoordinates_Z(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.CartesianCoordinates.Z = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
         #region Orientation Access Methods
         /// <remarks />
         private ServiceResult OnRead_Orientation(
@@ -29205,6 +29577,114 @@ namespace Opc.Ua
             lock (Lock)
             {
                 m_value.Orientation = (ThreeDOrientation)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region Orientation_A Access Methods
+        /// <remarks />
+        private ServiceResult OnRead_Orientation_A(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.Orientation.A;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <remarks />
+        private ServiceResult OnWrite_Orientation_A(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.Orientation.A = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region Orientation_B Access Methods
+        /// <remarks />
+        private ServiceResult OnRead_Orientation_B(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.Orientation.B;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <remarks />
+        private ServiceResult OnWrite_Orientation_B(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.Orientation.B = (double)Write(value);
+            }
+
+            return ServiceResult.Good;
+        }
+        #endregion
+
+        #region Orientation_C Access Methods
+        /// <remarks />
+        private ServiceResult OnRead_Orientation_C(
+            ISystemContext context,
+            NodeState node,
+            NumericRange indexRange,
+            QualifiedName dataEncoding,
+            ref object value,
+            ref StatusCode statusCode,
+            ref DateTime timestamp)
+        {
+            lock (Lock)
+            {
+                DoBeforeReadProcessing(context, node);
+
+                if (m_value != null)
+                {
+                    value = m_value.Orientation.C;
+                }
+
+                return Read(context, node, indexRange, dataEncoding, ref value, ref statusCode, ref timestamp);
+            }
+        }
+
+        /// <remarks />
+        private ServiceResult OnWrite_Orientation_C(ISystemContext context, NodeState node, ref object value)
+        {
+            lock (Lock)
+            {
+                m_value.Orientation.C = (double)Write(value);
             }
 
             return ServiceResult.Good;
@@ -29727,7 +30207,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             byte mode = (byte)_inputArguments[0];
 
@@ -29735,7 +30215,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -29745,7 +30225,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = fileHandle;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -29828,20 +30308,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             uint fileHandle = (uint)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     fileHandle);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -29925,7 +30405,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             uint fileHandle = (uint)_inputArguments[0];
             int length = (int)_inputArguments[1];
@@ -29934,7 +30414,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -29945,7 +30425,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = data;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -30030,14 +30510,14 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             uint fileHandle = (uint)_inputArguments[0];
             byte[] data = (byte[])_inputArguments[1];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -30045,7 +30525,7 @@ namespace Opc.Ua
                     data);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -30130,7 +30610,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             uint fileHandle = (uint)_inputArguments[0];
 
@@ -30138,7 +30618,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -30148,7 +30628,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = position;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -30232,14 +30712,14 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             uint fileHandle = (uint)_inputArguments[0];
             ulong position = (ulong)_inputArguments[1];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -30247,7 +30727,7 @@ namespace Opc.Ua
                     position);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -30673,7 +31153,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string directoryName = (string)_inputArguments[0];
 
@@ -30681,7 +31161,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -30691,7 +31171,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = directoryNodeId;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -30777,7 +31257,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string fileName = (string)_inputArguments[0];
             bool requestFileOpen = (bool)_inputArguments[1];
@@ -30787,7 +31267,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -30800,7 +31280,7 @@ namespace Opc.Ua
             _outputArguments[0] = fileNodeId;
             _outputArguments[1] = fileHandle;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -30885,20 +31365,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             NodeId objectToDelete = (NodeId)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     objectToDelete);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -30984,7 +31464,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             NodeId objectToMoveOrCopy = (NodeId)_inputArguments[0];
             NodeId targetDirectory = (NodeId)_inputArguments[1];
@@ -30995,7 +31475,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -31008,7 +31488,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = newNodeId;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -31394,7 +31874,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             object generateOptions = (object)_inputArguments[0];
 
@@ -31404,7 +31884,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -31418,7 +31898,7 @@ namespace Opc.Ua
             _outputArguments[1] = fileHandle;
             _outputArguments[2] = completionStateMachine;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -31506,7 +31986,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             object generateOptions = (object)_inputArguments[0];
 
@@ -31515,7 +31995,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -31527,7 +32007,7 @@ namespace Opc.Ua
             _outputArguments[0] = fileNodeId;
             _outputArguments[1] = fileHandle;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -31613,7 +32093,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             uint fileHandle = (uint)_inputArguments[0];
 
@@ -31621,7 +32101,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -31631,7 +32111,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = completionStateMachine;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -32081,7 +32561,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string roleName = (string)_inputArguments[0];
             string namespaceUri = (string)_inputArguments[1];
@@ -32090,7 +32570,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -32101,7 +32581,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = roleNodeId;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -32185,20 +32665,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             NodeId roleNodeId = (NodeId)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     roleNodeId);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -32994,20 +33474,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             IdentityMappingRuleType rule = (IdentityMappingRuleType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     rule);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -33089,20 +33569,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             IdentityMappingRuleType rule = (IdentityMappingRuleType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     rule);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -33184,20 +33664,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string applicationUri = (string)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     applicationUri);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -33280,20 +33760,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string applicationUri = (string)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     applicationUri);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -33375,20 +33855,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             EndpointType endpoint = (EndpointType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     endpoint);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -33470,20 +33950,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             EndpointType endpoint = (EndpointType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     endpoint);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -34422,12 +34902,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -34741,12 +35221,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -34863,12 +35343,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -34986,12 +35466,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -35110,12 +35590,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -35232,12 +35712,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -35552,12 +36032,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -35799,12 +36279,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -36195,12 +36675,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -36398,12 +36878,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -36417,7 +36897,7 @@ namespace Opc.Ua
     /// <remarks />
     /// <exclude />
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class XYArrayItemState : ArrayItemState
+    public partial class XYArrayItemState : ArrayItemState<XVType[]>
     {
         #region Constructors
         /// <remarks />
@@ -36563,55 +37043,6 @@ namespace Opc.Ua
         private PropertyState<AxisInformation> m_xAxisDefinition;
         #endregion
     }
-
-    #region XYArrayItemState<T> Class
-    /// <remarks />
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public class XYArrayItemState<T> : XYArrayItemState
-    {
-        #region Constructors
-        /// <remarks />
-        public XYArrayItemState(NodeState parent) : base(parent)
-        {
-            Value = default(T);
-        }
-
-        /// <remarks />
-        protected override void Initialize(ISystemContext context)
-        {
-            base.Initialize(context);
-
-            Value = default(T);
-            DataType = TypeInfo.GetDataTypeId(typeof(T));
-            ValueRank = TypeInfo.GetValueRank(typeof(T));
-        }
-
-        /// <remarks />
-        protected override void Initialize(ISystemContext context, NodeState source)
-        {
-            InitializeOptionalChildren(context);
-            base.Initialize(context, source);
-        }
-        #endregion
-
-        #region Public Members
-        /// <remarks />
-        public new T Value
-        {
-            get
-            {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
-            }
-
-            set
-            {
-                ((BaseVariableState)this).Value = value;
-            }
-        }
-        #endregion
-    }
-    #endregion
     #endif
     #endregion
 
@@ -36851,12 +37282,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -37148,12 +37579,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -37352,12 +37783,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -37906,12 +38337,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -38830,14 +39261,14 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             uint subscriptionId = (uint)_inputArguments[0];
             uint monitoredItemId = (uint)_inputArguments[1];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -38845,7 +39276,7 @@ namespace Opc.Ua
                     monitoredItemId);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -38929,20 +39360,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             uint subscriptionId = (uint)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     subscriptionId);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -39026,14 +39457,14 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             byte[] eventId = (byte[])_inputArguments[0];
             LocalizedText comment = (LocalizedText)_inputArguments[1];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -39041,7 +39472,7 @@ namespace Opc.Ua
                     comment);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -39625,20 +40056,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             int selectedResponse = (int)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     selectedResponse);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -41918,20 +42349,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             double shelvingTime = (double)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     shelvingTime);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -54753,7 +55184,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             uint masks = (uint)_inputArguments[0];
 
@@ -54761,7 +55192,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -54771,7 +55202,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = fileHandle;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -54856,7 +55287,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             uint fileHandle = (uint)_inputArguments[0];
 
@@ -54864,7 +55295,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -54874,7 +55305,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = applyChangesRequired;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -54958,14 +55389,14 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             byte[] certificate = (byte[])_inputArguments[0];
             bool isTrustedCertificate = (bool)_inputArguments[1];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -54973,7 +55404,7 @@ namespace Opc.Ua
                     isTrustedCertificate);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -55057,14 +55488,14 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string thumbprint = (string)_inputArguments[0];
             bool isTrustedCertificate = (bool)_inputArguments[1];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -55072,7 +55503,7 @@ namespace Opc.Ua
                     isTrustedCertificate);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -57741,7 +58172,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             NodeId certificateGroupId = (NodeId)_inputArguments[0];
             NodeId certificateTypeId = (NodeId)_inputArguments[1];
@@ -57754,7 +58185,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -57769,7 +58200,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = applyChangesRequired;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -57862,7 +58293,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             NodeId certificateGroupId = (NodeId)_inputArguments[0];
             NodeId certificateTypeId = (NodeId)_inputArguments[1];
@@ -57874,7 +58305,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -57888,7 +58319,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = certificateRequest;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -57976,13 +58407,13 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             byte[][] certificates = (byte[][])_outputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -57991,7 +58422,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = certificates;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -58839,7 +59270,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string resourceUri = (string)_inputArguments[0];
             string profileUri = (string)_inputArguments[1];
@@ -58849,7 +59280,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -58861,7 +59292,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = credentialNodeId;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -59110,7 +59541,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string credentialId = (string)_inputArguments[0];
             string requestedSecurityPolicyUri = (string)_inputArguments[1];
@@ -59120,7 +59551,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -59133,7 +59564,7 @@ namespace Opc.Ua
             _outputArguments[0] = publicKey;
             _outputArguments[1] = revisedSecurityPolicyUri;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -59703,7 +60134,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string credentialId = (string)_inputArguments[0];
             byte[] credentialSecret = (byte[])_inputArguments[1];
@@ -59712,7 +60143,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -59722,7 +60153,7 @@ namespace Opc.Ua
                     securityPolicyUri);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -60994,7 +61425,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string securityGroupId = (string)_inputArguments[0];
             uint startingTokenId = (uint)_inputArguments[1];
@@ -61008,7 +61439,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -61028,7 +61459,7 @@ namespace Opc.Ua
             _outputArguments[3] = timeToNextKey;
             _outputArguments[4] = keyLifetime;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -61119,7 +61550,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string securityGroupId = (string)_inputArguments[0];
 
@@ -61127,7 +61558,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -61137,7 +61568,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = securityGroupNodeId;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -61226,7 +61657,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string securityGroupName = (string)_inputArguments[0];
             double keyLifetime = (double)_inputArguments[1];
@@ -61239,7 +61670,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -61255,7 +61686,7 @@ namespace Opc.Ua
             _outputArguments[0] = securityGroupId;
             _outputArguments[1] = securityGroupNodeId;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -61344,20 +61775,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             NodeId securityGroupNodeId = (NodeId)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     securityGroupNodeId);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -62557,7 +62988,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string securityGroupId = (string)_inputArguments[0];
             string securityPolicyUri = (string)_inputArguments[1];
@@ -62569,7 +63000,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -62582,7 +63013,7 @@ namespace Opc.Ua
                     keyLifetime);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -62672,7 +63103,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             PubSubConnectionDataType configuration = (PubSubConnectionDataType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
 
@@ -62680,7 +63111,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -62690,7 +63121,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = connectionId;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -62773,20 +63204,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             NodeId connectionId = (NodeId)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     connectionId);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -63382,7 +63813,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             QualifiedName fieldName = (QualifiedName)_inputArguments[0];
             object fieldValue = (object)_inputArguments[1];
@@ -63391,7 +63822,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -63402,7 +63833,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = fieldId;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -63486,20 +63917,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             NodeId fieldId = (NodeId)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     fieldId);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -63863,7 +64294,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             ConfigurationVersionDataType configurationVersion = (ConfigurationVersionDataType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
             string[] fieldNameAliases = (string[])_inputArguments[1];
@@ -63875,7 +64306,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -63890,7 +64321,7 @@ namespace Opc.Ua
             _outputArguments[0] = newConfigurationVersion;
             _outputArguments[1] = addResults;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -63981,7 +64412,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             ConfigurationVersionDataType configurationVersion = (ConfigurationVersionDataType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
             uint[] variablesToRemove = (uint[])_inputArguments[1];
@@ -63991,7 +64422,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -64004,7 +64435,7 @@ namespace Opc.Ua
             _outputArguments[0] = newConfigurationVersion;
             _outputArguments[1] = removeResults;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -64397,7 +64828,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             ConfigurationVersionDataType configurationVersion = (ConfigurationVersionDataType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
             string[] fieldNameAliases = (string[])_inputArguments[1];
@@ -64408,7 +64839,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -64421,7 +64852,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = newConfigurationVersion;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -65105,7 +65536,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string name = (string)_inputArguments[0];
             string[] fieldNameAliases = (string[])_inputArguments[1];
@@ -65118,7 +65549,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -65135,7 +65566,7 @@ namespace Opc.Ua
             _outputArguments[1] = configurationVersion;
             _outputArguments[2] = addResults;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -65229,7 +65660,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string name = (string)_inputArguments[0];
             NodeId eventNotifier = (NodeId)_inputArguments[1];
@@ -65243,7 +65674,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -65260,7 +65691,7 @@ namespace Opc.Ua
             _outputArguments[0] = configurationVersion;
             _outputArguments[1] = dataSetNodeId;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -65353,7 +65784,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string name = (string)_inputArguments[0];
             DataSetMetaDataType dataSetMetaData = (DataSetMetaDataType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[1]);
@@ -65364,7 +65795,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -65378,7 +65809,7 @@ namespace Opc.Ua
             _outputArguments[0] = dataSetNodeId;
             _outputArguments[1] = addResults;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -65469,7 +65900,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string name = (string)_inputArguments[0];
             DataSetMetaDataType dataSetMetaData = (DataSetMetaDataType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[1]);
@@ -65481,7 +65912,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -65495,7 +65926,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = dataSetNodeId;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -65583,20 +66014,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             NodeId dataSetNodeId = (NodeId)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     dataSetNodeId);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -65680,7 +66111,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string name = (string)_inputArguments[0];
 
@@ -65688,7 +66119,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -65698,7 +66129,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = dataSetFolderNodeId;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -65782,20 +66213,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             NodeId dataSetFolderNodeId = (NodeId)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     dataSetFolderNodeId);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -66597,7 +67028,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             WriterGroupDataType configuration = (WriterGroupDataType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
 
@@ -66605,7 +67036,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -66615,7 +67046,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = groupId;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -66701,7 +67132,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             ReaderGroupDataType configuration = (ReaderGroupDataType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
 
@@ -66709,7 +67140,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -66719,7 +67150,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = groupId;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -66803,20 +67234,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             NodeId groupId = (NodeId)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     groupId);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -68129,7 +68560,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             DataSetWriterDataType configuration = (DataSetWriterDataType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
 
@@ -68137,7 +68568,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -68147,7 +68578,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = dataSetWriterNodeId;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -68231,20 +68662,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             NodeId dataSetWriterNodeId = (NodeId)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     dataSetWriterNodeId);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -68935,7 +69366,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             DataSetReaderDataType configuration = (DataSetReaderDataType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
 
@@ -68943,7 +69374,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -68953,7 +69384,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = dataSetReaderNodeId;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -69037,20 +69468,20 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             NodeId dataSetReaderNodeId = (NodeId)_inputArguments[0];
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
                     dataSetReaderNodeId);
             }
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -71234,7 +71665,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             ConfigurationVersionDataType configurationVersion = (ConfigurationVersionDataType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
             FieldTargetDataType[] targetVariablesToAdd = (FieldTargetDataType[])ExtensionObject.ToArray(_inputArguments[1], typeof(FieldTargetDataType));
@@ -71243,7 +71674,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -71254,7 +71685,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = addResults;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -71341,7 +71772,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string parentNodeName = (string)_inputArguments[0];
             RolePermissionType[] rolePermissions = (RolePermissionType[])ExtensionObject.ToArray(_inputArguments[1], typeof(RolePermissionType));
@@ -71350,7 +71781,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -71361,7 +71792,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = parentNodeId;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -71778,7 +72209,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             ConfigurationVersionDataType configurationVersion = (ConfigurationVersionDataType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
             FieldTargetDataType[] targetVariablesToAdd = (FieldTargetDataType[])ExtensionObject.ToArray(_inputArguments[1], typeof(FieldTargetDataType));
@@ -71787,7 +72218,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -71798,7 +72229,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = addResults;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -71886,7 +72317,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             ConfigurationVersionDataType configurationVersion = (ConfigurationVersionDataType)ExtensionObject.ToEncodeable((ExtensionObject)_inputArguments[0]);
             uint[] targetsToRemove = (uint[])_inputArguments[1];
@@ -71895,7 +72326,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -71906,7 +72337,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = removeResults;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -77890,7 +78321,7 @@ namespace Opc.Ua
                 return base.Call(_context, _objectId, _inputArguments, _outputArguments);
             }
 
-            ServiceResult _result = null;
+            ServiceResult result = null;
 
             string aliasNameSearchPattern = (string)_inputArguments[0];
             NodeId referenceTypeFilter = (NodeId)_inputArguments[1];
@@ -77899,7 +78330,7 @@ namespace Opc.Ua
 
             if (OnCall != null)
             {
-                _result = OnCall(
+                result = OnCall(
                     _context,
                     this,
                     _objectId,
@@ -77910,7 +78341,7 @@ namespace Opc.Ua
 
             _outputArguments[0] = aliasNodeList;
 
-            return _result;
+            return result;
         }
         #endregion
 
@@ -78006,7 +78437,7 @@ namespace Opc.Ua
 
         #region Public Properties
         /// <remarks />
-        public PropertyState EnumDictionaryEntries
+        public PropertyState<Variant> EnumDictionaryEntries
         {
             get
             {
@@ -78087,11 +78518,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                EnumDictionaryEntries = new PropertyState(this);
+                                EnumDictionaryEntries = new PropertyState<Variant>(this);
                             }
                             else
                             {
-                                EnumDictionaryEntries = (PropertyState)replacement;
+                                EnumDictionaryEntries = (PropertyState<Variant>)replacement;
                             }
                         }
                     }
@@ -78132,7 +78563,7 @@ namespace Opc.Ua
         #endregion
 
         #region Private Fields
-        private PropertyState m_enumDictionaryEntries;
+        private PropertyState<Variant> m_enumDictionaryEntries;
         private PropertyState<NodeId[]> m_valueAsDictionaryEntries;
         #endregion
     }
@@ -78174,12 +78605,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -78300,12 +78731,12 @@ namespace Opc.Ua
         {
             get
             {
-                return CheckTypeBeforeCast<T>(((BaseVariableState)this).Value, true);
+                return CheckTypeBeforeCast<T>(base.Value, true);
             }
 
             set
             {
-                ((BaseVariableState)this).Value = value;
+                base.Value = value;
             }
         }
         #endregion
@@ -80056,7 +80487,7 @@ namespace Opc.Ua
         }
 
         /// <remarks />
-        public BaseDataVariableState FailureSystemIdentifier
+        public BaseDataVariableState<Variant> FailureSystemIdentifier
         {
             get
             {
@@ -80191,11 +80622,11 @@ namespace Opc.Ua
                         {
                             if (replacement == null)
                             {
-                                FailureSystemIdentifier = new BaseDataVariableState(this);
+                                FailureSystemIdentifier = new BaseDataVariableState<Variant>(this);
                             }
                             else
                             {
-                                FailureSystemIdentifier = (BaseDataVariableState)replacement;
+                                FailureSystemIdentifier = (BaseDataVariableState<Variant>)replacement;
                             }
                         }
                     }
@@ -80218,7 +80649,7 @@ namespace Opc.Ua
         private BaseDataVariableState<TsnTalkerStatus> m_talkerStatus;
         private BaseDataVariableState<TsnListenerStatus> m_listenerStatus;
         private BaseDataVariableState<TsnFailureCode> m_failureCode;
-        private BaseDataVariableState m_failureSystemIdentifier;
+        private BaseDataVariableState<Variant> m_failureSystemIdentifier;
         #endregion
     }
     #endif
