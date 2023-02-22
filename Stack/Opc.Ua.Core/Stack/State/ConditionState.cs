@@ -754,6 +754,7 @@ namespace Opc.Ua
         /// <returns>true if branch</returns>
         protected bool IsBranch()
         {
+            if (this.BranchId.Value == null) return false;
             return !(this.BranchId.Value.IsNullNodeId);
         }
         #endregion
